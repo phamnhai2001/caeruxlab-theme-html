@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+.template-search {
+  padding-top: 15%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 88.888%;
+}
+.template-search .template-search__header {
+  margin-bottom: 80px;
+}
+.template-search .template-search__header .h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.template-search .template-search__header .template-search__search form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.template-search .template-search__header .template-search__search form .field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.template-search .template-search__header .template-search__search form .field .search__input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid;
+  padding: 15px;
+}
+.template-search .template-search__header .template-search__search form .field label {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  font-size: 12px;
+}
+.template-search .template-search__header .template-search__search form .field button {
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  background: none;
+}
+.template-search .template-search__header .template-search__search form .field button svg {
+  width: 15px;
+}
+.template-search .page-width .facets-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.template-search .page-width .facets-container .facets {
+  display: block;
+  grid-column-start: span 2;
+}
+.template-search .page-width .facets-container .facets form {
+  display: grid;
+  gap: 0 50px;
+  grid-template-columns: 1fr -webkit-max-content max-content;
+  grid-template-columns: 1fr max-content max-content;
+  margin-bottom: 5px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper h2 {
+  margin-right: 15px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details {
+  margin-right: 35px;
+  position: relative;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary {
+  list-style: none;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div span {
+  font-weight: 500;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div svg {
+  width: 10px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display {
+  border: 1px solid #f3f3f3;
+  position: absolute;
+  overflow-y: auto;
+  width: 350px;
+  max-height: 250px;
+  background: white;
+  top: 40px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header span {
+  font-size: 15px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header .facets__reset {
+  font-size: 14px;
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list {
+  border-top: 1px solid #f3f3f3;
+  padding: 20px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item:last-child {
+  margin-bottom: 0;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox {
+  position: relative;
+  font-size: 15px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input {
+  position: absolute;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input:checked ~ .icon-checkmark {
+  visibility: visible;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox .icon-checkmark {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  left: 3px;
+  width: 13px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price {
+  border-top: 1px solid #f3f3f3;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field {
+  position: relative;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__input {
+  border: 1px solid;
+  padding: 15px;
+}
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.template-search .page-width .facets-container .facets form .active-facets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-top: 5px;
+}
+.template-search .page-width .facets-container .facets form .sorting {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+}
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field h2 {
+  padding-right: 15px;
+}
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select {
+  position: relative;
+}
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select select {
+  border: 0;
+  width: 100%;
+  padding-right: 15px;
+  font-size: 16px;
+}
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select svg {
+  position: absolute;
+  width: 10px;
+  right: 0;
+  top: 6px;
+}

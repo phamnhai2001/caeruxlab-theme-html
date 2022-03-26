@@ -1,0 +1,481 @@
+#wrapper {
+    &.cart {
+        padding-top: 14%;
+        >.inner {
+            max-width: 1200px;
+            width: 88.888%;
+            margin: 0 auto 80px;
+            @include sp {
+                max-width: 100%;
+                margin: 0 auto 8vw;
+            }
+            @include sp_min {
+                margin: 0 auto 10.416vw;
+            }
+            .cart_wrapper {
+                margin-bottom: 80px;
+                @include sp {
+                    margin-bottom: 8vw;
+                }
+                @include sp_min {
+                    margin-bottom: 10.416vw;
+                }
+                .txt_desp {
+                    text-align: left;
+                    margin-bottom: 30px;
+                    @include sp {
+                        margin-bottom: 3vw;
+                    }
+                    @include sp_min {
+                        margin-bottom: 3.906vw;
+                    }
+                    h2 {
+                        font-size: 48px;
+                        line-height: 80px;
+                        font-weight: 500;
+                        @include sp {
+                            font-size: 6.8vw;
+                            line-height: 8vw;
+                        }
+                        @include sp_min {
+                            font-size: 6.25vw;
+                            line-height: 10.416vw;
+                        }
+                    }
+                }
+                .cart_content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .list_cart_item {
+                        width: 72%;
+                        padding-right: 45px;
+                        overflow-y: auto;
+                        max-height: 1000px;
+                        @include sp {
+                            width: 100%;
+                            padding-right: 0;
+                            max-height: 120vw;
+                        }
+                        @include sp_min {
+                            max-height: 130.208vw;
+                        }
+                        li {
+                            margin-bottom: 20px;
+                            @include sp {
+                                margin-bottom: 2vw;
+                            }
+                            @include sp_min {
+                                margin-bottom: 2.604vw;
+                            }
+                            .item_cart {
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #EBEBEB;
+                                padding-bottom: 20px;
+                                @include sp {
+                                    padding: 8vw;
+                                    border: none;
+                                    background: #f8f6f645;
+                                    flex-direction: column;
+                                }
+                                @include sp_min {
+                                    padding: 10.416vw;
+                                }
+                                .data_cart {
+                                    display: flex;
+                                    @include sp {
+                                        margin-bottom: 5vw;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 6.510vw;
+                                    }
+                                    .item_thumb {
+                                        img {
+                                            width: 100px;
+                                            height: 100px;
+                                            @include sp {
+                                                width: 18vw;
+                                                height: 18vw;
+                                            }
+                                            @include sp_min {
+                                                width: 18.223vw;
+                                                height: 18.223vw;
+                                            }
+                                        }
+                                    }
+                                    .data {
+                                        margin-left: 10px;
+                                        @include sp {
+                                            margin-left: 5vw;
+                                        }
+                                        @include sp_min {
+                                            margin-left: 5.208vw;
+                                        }
+                                        a {
+                                            h3 {
+                                                color: $clr-base-font;
+                                                font-size: 18px;
+                                                font-weight: 600;
+                                                @include sp {
+                                                    font-size: 3.8vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.906vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .entry_points {
+                                    text-align: right;
+                                    .box_check {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-bottom: 60px;
+                                        @include sp {
+                                            margin-bottom: 6vw;
+                                            justify-content: flex-end;
+                                            align-items: flex-end;
+                                        }
+                                        @include sp_min {
+                                            margin-bottom: 7.8125vw;
+                                        }
+                                        .btn_quantity {
+                                            border: 1px solid;
+                                            padding: 5px;
+                                            @include sp {
+                                                padding-bottom: 0.5vw;
+                                            }
+                                            @include sp_min {
+                                                padding-bottom: 0.651vw;
+                                            }
+                                            button {
+                                                border: none;
+                                                background: none;
+                                                span {
+                                                    @include sp {
+                                                        font-size: 3.4vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 3.515vw;
+                                                    }
+                                                }
+                                            }
+                                            input {
+                                                border: none;
+                                                width: 50px;
+                                                text-align: center;
+                                                padding-left: 20px;
+                                                @include sp {
+                                                    width: 6vw;
+                                                    padding-left: 0;
+                                                    font-size: 3.4vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 6.510vw;
+                                                    font-size: 3.515vw;
+                                                }
+                                            }
+                                        }
+                                        .btn_del {
+                                            padding: 7px 0 7px 20px;
+                                            @include sp {
+                                                padding: 0.7vw 0 0.7vw 2vw;
+                                            }
+                                            @include sp_min {
+                                                padding: 0.911vw 0 0.911vw 2.604vw;
+                                            }
+                                            i {
+                                                cursor: pointer;
+                                                @include sp {
+                                                    font-size: 3.5vw;
+                                                    padding-left: 2.8vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.515vw;
+                                                    padding-left: 2.864vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .point {
+                                        h3 {
+                                            font-weight: 600;
+                                            font-size: 20px;
+                                            @include sp {
+                                                font-size: 5vw;
+                                            }
+                                            @include sp_min {
+                                                font-size: 5.078vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cart_footer {
+                        border: 1px solid #dddddd;
+                        @include sp {
+                            margin: 0 auto;
+                            width: 100%;
+                            border: none;
+                        }
+                        .cart_blocks {
+                            padding: 25px 15px;
+                            @include sp {
+                                padding-top: 2.5vw 1.5vw;
+                            }
+                            @include sp_min {
+                                padding-top: 3.255vw 1.953vw;
+                            }
+                            .js_contents {
+                                margin-bottom: 60px;
+                                @include sp {
+                                    margin-bottom: 8vw;
+                                }
+                                @include sp_min {
+                                    margin-bottom: 7.8125vw;
+                                }
+                                .total {
+                                    margin-bottom: 25px;
+                                    @include sp {
+                                        margin-bottom: 5.5vw;
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 5.468vw;
+                                    }
+                                    h3 {
+                                        font-weight: 600;
+                                        font-size: 30px;
+                                        line-height: 40px;
+                                        margin-bottom: 20px;
+                                        @include sp {
+                                            font-size: 6vw;
+                                            line-height: 7.5vw;
+                                            margin-bottom: 0;
+                                        }
+                                        @include sp_min {
+                                            font-size: 5.989vw;
+                                            line-height: 7.8125vw;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 35px;
+                                        line-height: 45px;
+                                        font-weight: 600;
+                                        @include sp {
+                                            font-size: 6.5vw;
+                                            line-height: 7.5vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 6.510vw;
+                                            line-height: 7.8125vw;
+                                        }
+                                    }
+                                }
+                                small {
+                                    font-size: 12px;
+                                    @include sp {
+                                        font-size: 2.6vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 2.604vw;
+                                    }
+                                }
+                            }
+                            .cart_checkout {
+                                @include sp {
+                                    display: flex;
+                                }
+                                button {
+                                    width: 80%;
+                                    border: none;
+                                    padding: 15px;
+                                    color: $clr-base;
+                                    background: $clr-base-font;
+                                    font-size: 16px;
+                                    cursor: pointer;
+                                    margin: 0 auto 15px;
+                                    display: block;
+                                    @include sp {
+                                        width: 46%;
+                                        padding: 2.5vw;
+                                        font-size: 3vw;
+                                        margin: 0 auto;
+                                    }
+                                    @include sp_min {
+                                        width: 50%;
+                                        padding: 2.604vw;
+                                        font-size: 3.125vw;
+                                    }
+                                }
+                                a {
+                                    color: $clr-base;
+                                    cursor: pointer;
+                                    padding: 15px 25px;
+                                    background: $clr-base-font;
+                                    font-size: 16px;
+                                    display: inline-flex;
+                                    @include sp {
+                                        width: 46%;
+                                        padding: 2.5vw 7vw;
+                                        font-size: 3vw;
+                                        margin-bottom: 0;
+                                        margin-left: 4vw;
+                                    }
+                                    @include sp_min {
+                                        width: 50%;
+                                        padding: 2.604vw 5.598vw;
+                                        font-size: 3.125vw;
+                                        margin-left: 4.166vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section {
+                &#feature_collection {
+                    .inner {
+                        .list_item {
+                            margin-bottom: 80px;
+                            overflow: hidden;
+                            @include sp {
+                            margin-bottom: 8vw;
+                            }
+                            @include sp_min {
+                            margin-bottom: 10.461vw;
+                            }
+                            ul {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                width: 100%;
+                                margin: 0 -10px;
+                                @include sp {
+                                    margin: 0 -1vw;
+                                }
+                                @include sp {
+                                    margin: 0 -1.302vw;
+                                }
+                                li {
+                                    padding: 0 10px;
+                                    width: 25%;
+                                    @include sp {
+                                    padding: 0 1.2vw;
+                                    width: 33.333%;
+                                    }
+                                    @include sp_min {
+                                    width: 50%;
+                                    padding: 0 1.302vw;
+                                    }
+                                    a {
+                                        .item_content {
+                                            .thumb {
+                                                transition-duration: 0.75s;
+                                                margin-bottom: 10px;
+                                                overflow: hidden;
+                                                padding-top: 100%;
+                                                position: relative;
+                                                width: 100%;
+                                                @include sp {
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                                img {
+                                                    display: block;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    object-fit: cover;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 0;
+                                                }
+                                            }
+                                            .txt_desp {
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: 2;
+                                                @include sp {
+                                                    font-size: 1.4vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 1.823vw;
+                                                }
+                                                h3 {
+                                                    word-break: break-all;
+                                                    font-size: 16px;
+                                                    font-weight: bold;
+                                                    letter-spacing: -0.38px;
+                                                    overflow: hidden;
+                                                    width: 100%;
+                                                    display: -webkit-box;
+                                                    -webkit-box-orient: vertical;
+                                                    -webkit-line-clamp: 2;
+                                                    @include sp {
+                                                    font-size: 2.4vw;
+                                                    letter-spacing: 0;
+                                                    }
+                                                    @include sp_min {
+                                                    font-size: 2.864vw;
+                                                    }
+                                                }
+                                                p {
+                                                    font-size: 16px;
+                                                    font-weight: bold;
+                                                    letter-spacing: -0.38px;
+                                                    @include sp {
+                                                    font-size: 2.2vw;
+                                                    letter-spacing: 0;
+                                                    }
+                                                    @include sp_min {
+                                                    font-size: 2.864vw;
+                                                    }
+                                                    span {
+                                                        &.sold_out {
+                                                            background: $clr-sold-out;
+                                                            border-radius: 12px;
+                                                            color: $clr-base;
+                                                            display: inline-block;
+                                                            font-size: 12px;
+                                                            line-height: 1;
+                                                            min-width: 75px;
+                                                            padding: 6px 12px;
+                                                            text-align: center;
+                                                            margin-left: 6px;
+                                                            @include sp {
+                                                            border-radius: 1.2vw;
+                                                            font-size: 1.2vw;
+                                                            min-width: 7.5vw;
+                                                            padding: 0.6vw 1.2vw;
+                                                            margin-left: 0.6vw;
+                                                            }
+                                                            @include sp_min {
+                                                            border-radius: 1.822vw;
+                                                            font-size: 1.562vw;
+                                                            min-width: 9.765vw;
+                                                            padding: 0.781vw 1.526vw;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding shopify theme</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/address_draf.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="inner">
+            <div class="header_top">
+                <div class="header_top_content">
+                    <div class="header_description">Photogenic and glamorous everyday wear.</div>
+                    <ul class="header_top_nav">
+                        <li class="util_pc"><a href="register.html">Registration</a></li>
+                        <li class="util_pc"><a href="login.html">Login</a></li>
+                        <li id="header_upper-search">
+                            <div id="header_upper_search_form" class="search_content">
+                                <form role="search" method="get" action="">
+                                    <input id="header_upper_search__input" name="s" type="text" value="">
+                                    <button class="p-header__upper-search__submit icon_button">
+                                    </button>
+                                </form>
+                            </div>
+                            <button id="btn">
+                                <img src="assets/images/icon_search.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="header_welcart_cart">
+                            <a class="header_cart" href="#"><span class="header_welcart_cart_label">Cart</span>
+                                <span class="header_welcart_cart_badge">
+                                    <img src="assets/images/cart.svg" alt="">
+                                </span>
+                            </a>
+                            <div class="header_view_cart" id="header_view_cart">
+                                <p class="wc_empty_cart">There are no items in the cart right now.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="header_main_inner">
+                    <h1 class="header_logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <div class="header_main_nav">
+                        <nav class="global_nav_container" role="navigation">
+                            <div id="menuToggle">
+                                <div id="nav_toggle">
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div id="nav_bg"></div>
+                                <div id="global_nav">
+                                    <div class="header_logo util_sp">
+                                        <a href="#">
+                                            <img src="assets/images/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <ul class="list_menu">
+                                        <li class="item_menu">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Conlection</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li class="util_sp"><a href="#">Registration</a></li>
+                                        <li class="util_sp"><a href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <div id="wrapper">
+        <div class="inner">
+            <div class="customer addresses" data-customer-addresses>
+                <svg style="display: none">
+                  <symbol id="icon-caret" viewBox="0 0 10 6">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                  </symbol>
+                </svg>
+                <h1>Addresses</h1>
+                <a href="">
+                  Return account details
+                </a>
+                <div data-address>
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="AddAddress"
+                  >
+                    Add new address
+                  </button>
+                  <div id="AddAddress">
+                    <h2 id="AddressNewHeading">Add new</h2>
+                    <form action="">
+                      <div class="field">
+                        <label for="AddressFirstNameNew">Name</label>
+                        <div>
+                          <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="" autocomplete="given-name" placeholder="">
+                          <input type="text" id="AddressLastNameNew" name="address[last_name]" value="" autocomplete="family-name" placeholder="">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="AddressCompanyNew">Company</label>
+                        <input type="text" id="AddressCompanyNew" name="address[company]" value="" autocomplete="organization" placeholder="">
+                      </div>
+                      <div class="field">
+                        <label for="AddressAddress1New">Address</label>
+                        <input type="text" id="AddressAddress1New" name="address[address1]" value="" autocomplete="address-line1" placeholder="">
+                      </div>
+                      <div class="field">
+                        <label for="AddressCityNew">City</label>
+                        <input type="text" id="AddressCityNew" name="address[city]" value="" autocomplete="address-level2" placeholder="">
+                      </div>
+                      <div class="country">
+                        <label for="AddressCountryNew">Country</label>
+                        <div class="select">
+                          <select
+                            id="AddressCountryNew"
+                            name="address[country]"
+                            data-default=""
+                            autocomplete="country"
+                          >
+                            <option value="">Ha Noi</option>
+                            <option value="">Ho Chi Minh</option>
+                          </select>
+                          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                            <use href="#icon-caret" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div id="AddressProvinceContainerNew" style="display: none">
+                        <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+                        <div class="select">
+                          <select
+                            id="AddressProvinceNew"
+                            name="address[province]"
+                            data-default="{{ form.province }}"
+                            autocomplete="address-level1"
+                          >
+                          </select>
+                          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                            <use href="#icon-caret" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="AddressZipNew">Post code</label>
+                        <input type="text" id="AddressZipNew" name="address[zip]" value="" autocapitalize="characters" autocomplete="postal-code" placeholder="">
+                      </div>
+                      <div class="field">
+                        <label for="AddressPhoneNew">Phone</label>
+                        <input type="tel" id="AddressPhoneNew" name="address[phone]" value="" autocomplete="tel" placeholder="">
+                      </div>
+                      <div class="default_address">
+                        <input type="checkbox">
+                        <label for="address_default_address_new">Set as default</label>
+                      </div>
+                      <div class="btn">
+                        <button>Add</button>
+                        <button type="reset">Cancel</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+                <ul role="list">
+                    <li data-address>
+                        <h2>Address</h2>
+                      <button
+                        type="button"
+                        id="EditFormButton_"
+                        aria-label=""
+                        aria-controls="EditAddress_"
+                        aria-expanded="false"
+                        data-address-id=""
+                      >
+                        Edit
+                      </button>
+                      <button
+                        type="button"
+                        aria-label=""
+                        data-target=""
+                        data-confirm-message=""
+                      >
+                        Delete
+                      </button>
+                      <div id="EditAddress_" class="edit">
+                        <h2>Edit address</h2>
+                        <form action="">
+                          <div class="field">
+                            <label for="AddressFirstName_">Name</label>
+                            <div>
+                              <input type="text" id="AddressFirstName_" name="address[first_name]" value="" autocomplete="given-name" placeholder="">
+                              <input type="text" id="AddressLastName_" name="address[last_name]" value="" autocomplete="family-name" placeholder="">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label for="AddressCompany_">Company</label>
+                            <input type="text" id="AddressCompany_" name="address[company]" value="" autocomplete="organization" placeholder="">
+                          </div>
+                          <div class="field">
+                            <label for="AddressAddress1_">Address</label>
+                            <input type="text" id="AddressAddress1_" name="address[address1]" value="" autocomplete="address-line1" placeholder="">
+                          </div>
+                          <div class="field">
+                            <label for="AddressCity_">City</label>
+                            <input type="text" id="AddressCity_" name="address[city]" value="" autocomplete="address-level2" placeholder="">
+                          </div>
+                          <div class="country">
+                            <label for="AddressCountry_">
+                              Country
+                            </label>
+                            <div class="select">
+                              <select
+                                id="AddressCountry_"
+                                name="address[country]"
+                                data-address-country-select
+                                data-default=""
+                                data-form-id=""
+                                autocomplete="country"
+                              >
+                                <option value="">Ha Noi</option>
+                                <option value="">Ho Chi Minh</option>
+                              </select>
+                              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                                <use href="#icon-caret" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
+                            <label for="AddressProvince_{{ form.id }}">
+                              {{ 'customer.addresses.province' | t }}
+                            </label>
+                            <div class="select">
+                              <select
+                                id="AddressProvince_{{ form.id }}"
+                                name="address[province]"
+                                data-default="{{ form.province }}"
+                                autocomplete="address-level1"
+                              >
+                              </select>
+                              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                                <use href="#icon-caret" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label for="AddressZip_">Post code</label>
+                            <input type="text" id="AddressZip_" name="address[zip]" value="" autocapitalize="characters" autocomplete="postal-code" placeholder="">
+                          </div>
+                          <div class="field">
+                            <label for="AddressPhone_">Phone</label>
+                            <input type="tel" id="AddressPhone_"  name="address[phone]" value="" autocomplete="tel" placeholder="">
+                          </div>
+                          <div class="default_address">
+                            <label for="address_default_address_">
+                              set as address default
+                            </label>
+                          </div>
+                          <div class="btn">
+                            <button>Update</button>
+                            <button type="reset">Cancel</button>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="content_sub">
+                        <div class="ttl_desp">
+                            <h3>NEWSLETTER</h3>
+                        </div>
+                        <div class="txt_desp">
+                            <p>Enter your address to get $20 off your first orders</p>
+                        </div>
+                        <div class="form_sub">
+                            <form action="">
+                                <input type="email" placeholder="your@email.address">
+                                <button type="submit">
+                                    <img src="assets/images/envelope-regular-24.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>ADDRESS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Ha Noi</p>
+                                <p>Ho Chi Minh</p>
+                                <p>Da Nang</p>
+                                <p>Hai Phong</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>EXPLORE</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Home</p>
+                                <p>Conlection</p>
+                                <p>About us</p>
+                                <p>Contact</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>BLOGS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>News</p>
+                                <p>Fashion</p>
+                                <p>Event</p>
+                                <p>Promotion</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <div class="txt_desp">
+                        <p>@2022 Shopify. All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="time">
+                    <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>    
+</body>
+</html>

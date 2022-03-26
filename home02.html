@@ -1,0 +1,1232 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding shopify theme</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header_home02">
+        <div class="inner">
+            <div class="header_top">
+                <div class="header_top_content">
+                    <div class="header_logo">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="form_search">
+                            <form action="">
+                                <input type="text">
+                                <button class="btn_search">
+                                    <img src="assets/images/search-black.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_account_cart">
+                        <div class="account">
+                            <a href="">
+                                <img src="assets/images/user-circle-regular-24.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="">
+                                <img src="assets/images/shopping-bag-regular-24.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="header_main_nav">
+                    <nav class="global_nav_container" role="navigation">
+                        <div id="menuToggle">
+                            <div id="nav_toggle">
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div id="nav_bg"></div>
+                            <div id="global_nav">
+                                <div class="header_logo util_sp">
+                                    <a href="#">
+                                        <img src="assets/images/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <ul class="list_menu">
+                                    <li class="item_menu">
+                                        <a href="#">Homestyle</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Lifestyle</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Kids</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Brands</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Sale</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Locations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <div id="wrapper" class="home02">
+        <div class="inner">
+            <!-- banner -->
+            <section class="section banner">
+                <div class="inner">
+                    <div class="slider_top">
+                        <div class="slider_item fade">
+                            <div class="thumb">
+                                <img src="https://dummyimage.com/1920x867/dddddd/000&text=+" alt="">
+                            </div>
+                            <div class="txt_desp">
+                                <div class="desp_content">
+                                    <h3>The Title Banner Top 01</h3>
+                                    <div class="btn_shop">
+                                        <a href="#">Shop now!</a>
+                                        <img src="assets/images/arrow-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item fade">
+                            <div class="thumb">
+                                <img src="https://dummyimage.com/1920x867/dddddd/000&text=+" alt="">
+                            </div>
+                            <div class="txt_desp">
+                                <div class="desp_content">
+                                    <h3>The Title Banner Top 02</h3>
+                                    <div class="btn_shop">
+                                        <a href="#">Shop now!</a>
+                                        <img src="assets/images/arrow-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item fade">
+                            <div class="thumb">
+                                <img src="https://dummyimage.com/1920x867/dddddd/000&text=+" alt="">
+                            </div>
+                            <div class="txt_desp">
+                                <div class="desp_content">
+                                    <h3>The Title Banner Top 03</h3>
+                                    <div class="btn_shop">
+                                        <a href="#">Shop now!</a>
+                                        <img src="assets/images/arrow-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prev_next">
+                            <a class="prev" onclick="plusSlides(-1)">
+                                <img src="assets/images/arrow-left.svg" alt="">
+                            </a>
+                            <a class="next" onclick="plusSlides(1)">
+                                <img src="assets/images/arrow-right.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="slider_dot">
+                            <span class="dot_" onclick="currentSlide(1)"></span>
+                            <span class="dot_" onclick="currentSlide(2)"></span>
+                            <span class="dot_" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /banner -->
+            <!-- collection -->
+            <section class="util_pc section list_slider" id="collection">
+                <div class="inner">
+                    <div class="wrapper">
+                        <div class="tlt_main">
+                            <span>Our collections</span>
+                        </div>
+                        <div class="slider_collection">
+                            <div class="collection_index">
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_01.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_02.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_03.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_04.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_05.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_04.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_05.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prev_next">
+                                <a class="prev" onclick="prev(this)">
+                                    <img src="assets/images/arrow-left.svg" alt="">
+                                </a>
+                                <a class="next" onclick="next(this)">
+                                    <img src="assets/images/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all_product">
+                            <a href="">
+                                <span>All products</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="util_sp section list_slider" id="collection">
+                <div class="inner">
+                    <div class="wrapper">
+                        <div class="tlt_main">
+                            <span>Our collections</span>
+                        </div>
+                        <div class="slider_collection">
+                            <div class="collection_index">
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_01.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_02.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_03.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_04.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_05.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_04.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/conletc_05.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <span>Collections1</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prev_next">
+                                <a class="prev" onclick="prev(this)">
+                                    <img src="assets/images/arrow-left.svg" alt="">
+                                </a>
+                                <a class="next" onclick="next(this)">
+                                    <img src="assets/images/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all_product">
+                            <a href="">
+                                <span>All products</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/collection  -->
+            <!-- top products -->
+            <section class="util_pc section list_slider top_product" id="slider_top_product">
+                <div class="inner">
+                    <div class="tlt_main">
+                        <span>Top products</span>
+                    </div>
+                    <div class="slider_inner">
+                        <ul class="slider_01">
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">1</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">2</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">3</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">4</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">5</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">6</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="prev_next">
+                            <a class="prev" onclick="prev(this)">
+                                <img src="assets/images/arrow-left.svg" alt="">
+                            </a>
+                            <a class="next" onclick="next(this)">
+                                <img src="assets/images/arrow-right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="view_all">
+                        <a href="">
+                            <span>View all</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="util_sp section top_product" id="container_top_product">
+                <div class="inner">
+                    <div class="tlt_main">
+                        <span>Top products</span>
+                    </div>
+                    <div class="slider_inner" id="show">
+                        <ul class="slider_01">
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">1</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">2</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">3</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">4</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">5</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">6</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">7</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <span class="num_top_product">8</span>
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                    <div class="rating">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-solid.png" alt="">
+                                        <img src="assets/images/star-white.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="loadMore">
+                        See more
+                    </button>
+                </div>
+            </section>
+            <!-- /top products -->
+            <!-- top televisions -->
+            <section class=" section list_slider top_televisions" id="slider_top_televisions">
+                <div class="inner">
+                    <div class="tlt_main">
+                        <span>Top televisions</span>
+                    </div>
+                    <div class="slider_inner">
+                        <div class="slider slider_01">
+                            <div class="slider_wrapper">
+                                <div class="thumbnail">
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <h3 class="c-item__title">Type something somet</h3>
+                                            <div class="c_category"><span>Shop collections 1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider slider_02">
+                            <div class="slider_wrapper">
+                                <div class="thumbnail">
+                                    <a class="c-item" href="#">
+                                        <div class="item_thumbnail">
+                                            <img src="assets/images/200x200.png" alt="">
+                                        </div>
+                                        <div class="c-item__body">
+                                            <h3 class="c-item__title">Type something somet</h3>
+                                            <div class="c_category"><span>Shop collections</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="c-item" href="#">
+                                            <div class="item_thumbnail">
+                                                <img src="assets/images/200x200.png" alt="">
+                                            </div>
+                                            <div class="c-item__body">
+                                                <div class="c_category"><span>Eva Solo</span></div>
+                                                <h3 class="c-item__title">Type something</h3>
+                                                <div class="c-item__price">$30,00</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prev_next">
+                            <a class="prev" onclick="plus(-1)">
+                                <img src="assets/images/arrow-left.svg" alt="">
+                            </a>
+                            <a class="next" onclick="plus(1)">
+                                <img src="assets/images/arrow-right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /top televisions -->
+            <!-- recomended -->
+            <section class="section list_slider recomend" id="slider_recomend">
+                <div class="inner">
+                    <div class="tlt_main">
+                        <span>Recomended</span>
+                    </div>
+                    <div class="slider_inner">
+                        <ul id="carousel02" class="slider_01">
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="c-item" href="#">
+                                    <div class="item_thumbnail">
+                                        <img src="assets/images/200x200.png" alt="">
+                                    </div>
+                                    <div class="c-item__body">
+                                        <div class="c_category"><span>Eva Solo</span></div>
+                                        <h3 class="c-item__title">Type something</h3>
+                                        <div class="c-item__price">$30,00</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /recomended -->
+            <!-- shipping  -->
+            <section class="section shipping">
+                <div class="inner">
+                    <div class="shipping_wrapper">
+                        <div class="content_item free_shiping">
+                            <img src="" alt="">
+                            <div class="txt_desp">
+                                <h3>Free Shipping</h3>
+                                <p>form $ 75.00</p>
+                            </div>
+                        </div>
+                        <div class="content_item support">
+                            <img src="" alt="">
+                            <div class="txt_desp">
+                                <h3>Support 24/7</h3>
+                                <p>anytime</p>
+                            </div>
+                        </div>
+                        <div class="content_item free_return">
+                            <img src="" alt="">
+                            <div class="txt_desp">
+                                <h3>Free Return</h3>
+                                <p>up to 30 days</p>
+                            </div>
+                        </div>
+                        <div class="content_item secure_payment">
+                            <img src="" alt="">
+                            <div class="txt_desp">
+                                <h3>Secure Payment</h3>
+                                <p>totally safe</p>
+                            </div>
+                        </div>
+                        <div class="content_item daily_offer">
+                            <img src="" alt="">
+                            <div class="txt_desp">
+                                <h3>Daily Offer</h3>
+                                <p>up to 50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /shipping -->
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="content_sub">
+                        <div class="ttl_desp">
+                            <h3>NEWSLETTER</h3>
+                        </div>
+                        <div class="txt_desp">
+                            <p>Enter your address to get $20 off your first orders</p>
+                        </div>
+                        <div class="form_sub">
+                            <form action="">
+                                <input type="email" placeholder="your@email.address">
+                                <button type="submit">
+                                    <img src="assets/images/envelope-regular-24.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>ADDRESS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Ha Noi</p>
+                                <p>Ho Chi Minh</p>
+                                <p>Da Nang</p>
+                                <p>Hai Phong</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>EXPLORE</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Home</p>
+                                <p>Conlection</p>
+                                <p>About us</p>
+                                <p>Contact</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>BLOGS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>News</p>
+                                <p>Fashion</p>
+                                <p>Event</p>
+                                <p>Promotion</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <div class="txt_desp">
+                        <p>@2022 Shopify. All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="time">
+                    <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script src="assets/js/home02.js"></script>
+    <script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

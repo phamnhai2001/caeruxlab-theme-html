@@ -1,0 +1,518 @@
+#wrapper {
+    &.collection {
+        padding-top: 14%;
+        >.inner {
+            max-width: 1200px;
+            width: 88.888%;
+            margin: 0 auto 80px;
+            @include sp {
+                max-width: 100%;
+                margin: 0 auto 8vw;
+            }
+            .txt_desp {
+                margin-bottom: 30px;
+                @include sp {
+                    margin-bottom: 3vw;
+                    padding: 2vw 0;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: left;
+                    font-weight: 600;
+                    @include sp {
+                        font-size: 3vw;
+                        line-height: 3.5vw;
+                    }
+                }
+            }
+            .collection_section {
+                display: flex;
+                @include sp {
+                    flex-direction: column;
+                }
+                .collection_filters {
+                    .categories {
+                        border: 1px solid #979797;
+                        margin-bottom: 40px;
+                        .txt_desp {
+                            background: #0097CC;
+                            padding: 8px 10px;
+                            margin-bottom: 0;
+                            h3 {
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-transform: uppercase;
+                                color: $clr-base;
+                            }
+                        }
+                        .list_items {
+                            li {
+                                border-top: 1px solid #979797;
+                                padding: 8px 10px;
+                                a {
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        text-transform: uppercase;
+                                        color: $clr-base-font;
+                                        text-align: left;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .filters {
+                        border: 1px solid #979797;
+                        @include sp {
+                            border: none;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        .txt_desp {
+                            background: #0097CC;
+                            padding: 8px 10px;
+                            margin-bottom: 10px;
+                            @include sp {
+                                background: none;
+                                padding: 0;
+                                margin-bottom: 0;
+                                margin-right: 2vw;
+                            }
+                            h3 {
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-transform: uppercase;
+                                color: $clr-base;
+                                @include sp {
+                                    font-size: 1.6vw;
+                                    line-height: 2vw;
+                                    text-transform: none;
+                                    color: #979797;
+                                }
+                                @include sp_min {
+                                    font-size: 2.343vw;
+                                    line-height: 3.255vw;
+                                }
+                            }
+                        }
+                        .facets_wrapper {
+                            text-align: left;
+                            padding: 0 10px;
+                            @include sp {
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-wrap: wrap;
+                                padding: 0;
+                            }
+                            .availability {
+                                margin-bottom: 20px;
+                                @include sp {
+                                    margin-right: 5vw;
+                                    margin-bottom: 2vw;
+                                    position: relative;
+                                }
+                                .facets_display {
+                                    @include sp {
+                                        border: 1px solid;
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        visibility: hidden;
+                                        position: absolute;
+                                        z-index: 9999;
+                                        background: #fff;
+                                    }
+                                    .facets_list {
+                                        padding: 5px 10px;
+                                        @include sp {
+                                            padding: 0.5vw 1vw;
+                                            border-top: 1px solid;
+                                            width: 35vw;
+                                        }
+                                        .facets_item {
+                                            @include sp_min {
+                                                margin-bottom: 1.562vw;
+                                            }
+                                            label {
+                                                display: flex;
+                                                input[type=checkbox] {
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    padding: 0 0 18px 20px;
+                                                    outline: none;
+                                                    line-height: 30px;
+                                                    vertical-align: middle;
+                                                    font-weight: 500;
+                                                    @include sp {
+                                                        padding: 0 0 1.8vw 2vw;
+                                                        line-height: 3vw;
+                                                    }
+                                                    &::before {
+                                                        content: '';
+                                                        display: block;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        border: 1px solid #121212;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        cursor: pointer;
+                                                        @include sp {
+                                                            width: 1.5vw;
+                                                            height: 1.5vw;
+                                                        }
+                                                    }
+                                                    &:checked::after {
+                                                        content: '';
+                                                        display: block;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        background-image: url(../images/check-black.png);
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        background-size: 100% auto;
+                                                        cursor: pointer;
+                                                        @include sp {
+                                                            width: 1.5vw;
+                                                            height: 1.5vw;
+                                                        }
+                                                    }
+                                                }
+                                                p {
+                                                    font-size: 12px;
+                                                    font-weight: 600;
+                                                    line-height: 28px;
+                                                    @include sp {
+                                                        font-size: 1.2vw;
+                                                        line-height: 2.8vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 1.562vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.show {
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+                            .price {
+                                margin-bottom: 20px;
+                                @include sp {
+                                    margin-right: 5vw;
+                                    margin-bottom: 2vw;
+                                    position: relative;
+                                }
+                                .facets_display {
+                                    @include sp {
+                                        border: 1px solid;
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        visibility: hidden;
+                                        position: absolute;
+                                        z-index: 9999;
+                                        background: #fff;
+                                    }
+                                    .facets_price {
+                                        display: flex;
+                                        position: relative;
+                                        padding: 10px;
+                                        @include sp {
+                                            width: 35vw;
+                                            border-top: 1px solid;
+                                            padding: 1vw;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.604vw 1.302vw;
+                                        }
+                                        span {
+                                            &.field-currency {
+                                                padding: 7px 5px;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                @include sp {
+                                                    padding: 0.7vw 0.5vw;
+                                                    font-size: 1.6vw;
+                                                }
+                                            }
+                                        }
+                                        .field {
+                                            display: flex;
+                                            position: relative;
+                                            width: 100%;
+                                            .field_input {
+                                                width: 80%;
+                                                border: 1px solid #979797;
+                                                padding: 5px 10px;
+                                                border-radius: 0;
+                                                height: 27px;
+                                                @include sp {
+                                                    padding: 0.5vw 1vw;
+                                                    height: 2.7vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.show {
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+                            .color {
+                                margin-bottom: 20px;
+                                @include sp {
+                                    margin-right: 5vw;
+                                    margin-bottom: 2vw;
+                                    position: relative;
+                                }
+                                .facets_display {
+                                    @include sp {
+                                        border: 1px solid;
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        position: absolute;
+                                        z-index: 9999;
+                                        visibility: hidden;
+                                        background: #fff;
+                                    }
+                                    .facets_list {
+                                        padding: 5px 10px;
+                                        @include sp {
+                                            padding: 1vw 1vw;
+                                            border-top: 1px solid;
+                                            width: 35vw;
+                                        }
+                                        .facets_item {
+                                            @include sp_min {
+                                                margin-bottom: 1.562vw;
+                                            }
+                                            label {
+                                                display: flex;
+                                                input[type=checkbox] {
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    padding: 0 0 18px 20px;
+                                                    outline: none;
+                                                    line-height: 30px;
+                                                    vertical-align: middle;
+                                                    font-weight: 500;
+                                                    @include sp {
+                                                        padding: 0 0 1.8vw 2vw;
+                                                        line-height: 3vw;
+                                                    }
+                                                    &::before {
+                                                        content: '';
+                                                        display: block;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        border: 1px solid #121212;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        cursor: pointer;
+                                                        @include sp {
+                                                            width: 1.5vw;
+                                                            height: 1.5vw;
+                                                        }
+                                                    }
+                                                    &:checked::after {
+                                                        content: '';
+                                                        display: block;
+                                                        width: 15px;
+                                                        height: 15px;
+                                                        background-image: url(../images/check-black.png);
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        background-size: 100% auto;
+                                                        cursor: pointer;
+                                                        @include sp {
+                                                            width: 1.5vw;
+                                                            height: 1.5vw;
+                                                        }
+                                                    }
+                                                }
+                                                p {
+                                                    font-size: 12px;
+                                                    font-weight: 600;
+                                                    line-height: 28px;
+                                                    @include sp {
+                                                        font-size: 1.4vw;
+                                                        line-height: 2.8vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.show {
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .collection_product_grid {
+                    padding-left: 35px;
+                    @include sp {
+                        padding-left: 0;
+                    }
+                    .collection {
+                        .collection_banner {
+                            margin-bottom: 50px;
+                            @include sp {
+                                margin-bottom: 5vw;
+                            }
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .collection_product {
+                        .collection_product_list {
+                            .inner {
+                                .loading_overlay {
+                                    &.gradient {
+
+                                    }
+                                }
+                                .list_item {
+                                    border: 1px solid #979797;
+                                    padding: 12px;
+                                    @include sp {
+                                        border: none;
+                                        padding: 0;
+                                    }
+                                    #list_collection {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        margin: 0 -10px;
+                                        @include sp {
+                                          margin: 0 -1vw;
+                                        }
+                                        @include sp {
+                                          margin: 0 -1.302vw;
+                                        }
+                                        li {
+                                            padding: 0 10px;
+                                            width: 33.333%;
+                                            @include sp {
+                                                padding: 0 1.2vw;
+                                                width: 50%;
+                                            }
+                                            @include sp_min {
+                                                padding: 0 1.302vw;
+                                            }
+                                            a {
+                                                .item_content {
+                                                    .thumb {
+                                                        transition-duration: 0.75s;
+                                                        margin-bottom: 10px;
+                                                        overflow: hidden;
+                                                        padding-top: 100%;
+                                                        position: relative;
+                                                        width: 100%;
+                                                        @include sp {
+                                                        margin-bottom: 1vw;
+                                                        }
+                                                        @include sp_min {
+                                                        margin-bottom: 1.302vw;
+                                                        }
+                                                        img {
+                                                        display: block;
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        object-fit: cover;
+                                                        position: absolute;
+                                                        left: 0;
+                                                        top: 0;
+                                                        }
+                                                    }
+                                                    .txt_desp {
+                                                        font-size: 14px;
+                                                        font-weight: 400;
+                                                        line-height: 2;
+                                                        @include sp {
+                                                        font-size: 1.4vw;
+                                                        }
+                                                        @include sp_min {
+                                                        font-size: 1.823vw;
+                                                        }
+                                                        h3 {
+                                                            word-break: break-all;
+                                                            font-size: 16px;
+                                                            font-weight: bold;
+                                                            letter-spacing: -0.38px;
+                                                            overflow: hidden;
+                                                            width: 100%;
+                                                            display: -webkit-box;
+                                                            -webkit-box-orient: vertical;
+                                                            -webkit-line-clamp: 2;
+                                                            @include sp {
+                                                                font-size: 2.4vw;
+                                                                letter-spacing: 0;
+                                                            }
+                                                            @include sp_min {
+                                                                font-size: 2.864vw;
+                                                            }
+                                                        }
+                                                        p {
+                                                            font-size: 16px;
+                                                            font-weight: bold;
+                                                            letter-spacing: -0.38px;
+                                                            @include sp {
+                                                                font-size: 2.2vw;
+                                                                letter-spacing: 0;
+                                                            }
+                                                            @include sp_min {
+                                                                font-size: 2.864vw;
+                                                            }
+                                                            span {
+                                                                &.sold_out {
+                                                                    background: $clr-sold-out;
+                                                                    border-radius: 12px;
+                                                                    color: $clr-base;
+                                                                    display: inline-block;
+                                                                    font-size: 12px;
+                                                                    line-height: 1;
+                                                                    min-width: 75px;
+                                                                    padding: 6px 12px;
+                                                                    text-align: center;
+                                                                    margin-left: 6px;
+                                                                    @include sp {
+                                                                        border-radius: 1.2vw;
+                                                                        font-size: 1.2vw;
+                                                                        min-width: 7.5vw;
+                                                                        padding: 0.6vw 1.2vw;
+                                                                        margin-left: 0.6vw;
+                                                                    }
+                                                                    @include sp_min {
+                                                                        border-radius: 1.822vw;
+                                                                        font-size: 1.562vw;
+                                                                        min-width: 9.765vw;
+                                                                        padding: 0.781vw 1.526vw;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

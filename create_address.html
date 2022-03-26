@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding shopify theme</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="inner">
+            <div class="header_top">
+                <div class="header_top_content">
+                    <div class="header_description">Photogenic and glamorous everyday wear.</div>
+                    <ul class="header_top_nav">
+                        <li class="util_pc"><a href="register.html">Registration</a></li>
+                        <li class="util_pc"><a href="login.html">Login</a></li>
+                        <li id="header_upper-search">
+                            <div id="header_upper_search_form" class="search_content">
+                                <form role="search" method="get" action="">
+                                    <input id="header_upper_search__input" name="s" type="text" value="">
+                                    <button class="p-header__upper-search__submit icon_button">
+                                    </button>
+                                </form>
+                            </div>
+                            <button id="btn">
+                                <img src="assets/images/icon_search.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="header_welcart_cart">
+                            <a class="header_cart" href="#"><span class="header_welcart_cart_label">Cart</span>
+                                <span class="header_welcart_cart_badge">
+                                    <img src="assets/images/cart.svg" alt="">
+                                </span>
+                            </a>
+                            <div class="header_view_cart" id="header_view_cart">
+                                <p class="wc_empty_cart">There are no items in the cart right now.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="header_main_inner">
+                    <h1 class="header_logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <div class="header_main_nav">
+                        <nav class="global_nav_container" role="navigation">
+                            <div id="menuToggle">
+                                <div id="nav_toggle">
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div id="nav_bg"></div>
+                                <div id="global_nav">
+                                    <div class="header_logo util_sp">
+                                        <a href="#">
+                                            <img src="assets/images/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <ul class="list_menu">
+                                        <li class="item_menu">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Conlection</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li class="util_sp"><a href="#">Registration</a></li>
+                                        <li class="util_sp"><a href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/header -->
+    <div id="wrapper" class="address">
+        <div class="inner">
+            <div class="upper">
+                <div class="navi_top">
+                    <ul>
+                        <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                        <li><span class="current">Address</span></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section create_address edit_address">
+                <div class="edit_content">
+                    <div class="form_name">Register your address</div>
+                    <div class="form_edit">
+                        <form id="formAddress" action="">
+                            <div class="form_item">
+                                <div class="title">Name</div>
+                                <div class="input_content name">
+                                    <input id="first_name" type="text" name="address[first_name]" placeholder="Ultra">
+                                    <input id="last_name" type="text" name="address[last_name]" placeholder="Taro">
+                                    <span class="form_message"></span>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="title">
+                                    Company Name</div>
+                                <div class="input_content company">
+                                    <input id="company" type="text" name="address[company_name]" placeholder="ULTRA_VYBE">
+                                    <span class="form_message"></span>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="title">Phone number</div>
+                                <div class="input_content phone">
+                                    <input id="first_block_phone_number" type="text" name="address[phone_number_block_1]" placeholder="03">
+                                    <div class="peg"></div>
+                                    <input id="second_block_phone_number" type="text" name="address[phone_number_block_2]" placeholder="1234">
+                                    <div class="peg"></div>
+                                    <input id="third_block_phone_number" type="text" name="address[phone_number_block_3]" placeholder="1234">
+                                    <span class="form_message"></span>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="title">Post code</div>
+                                <div class="input_content post_office">
+                                    <input id="first_block_post_number" type="text" name="address[post_office_number_block_1]" placeholder="150">
+                                    <div class="peg"></div>
+                                    <input id="second_block_post_number" type="text" name="address[post_office_number_block_2]" placeholder="0011">
+                                    <div class="search_address">Search for an address</div>
+                                    <span class="form_message"></span>
+
+                                </div>
+                            </div>
+                            <div class="form_item create_box_select">
+                                <div class="title">Country / Region</div>
+                                <div id="box_check_option" class="input_content nation">
+                                    <select id="select_box" class="box_select_sort box_select_create_address" name="state">
+                                        <option value="2">Tokyo</option>
+                                        <option value="3">Tokyo</option>
+                                        <option value="4">Tokyo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="title">Municipalities </div>
+                                <div class="input_content city">
+                                    <input id="city" type="text" name="address[city]" placeholder="Shibuya Ward">
+                                    <span class="form_message"></span>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="title">Address</div>
+                                <div class="input_content street">
+                                    <input id="street" type="text" name="address[street]" placeholder="East 1_28_9 1F">
+                                    <span class="form_message"></span>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <div class="input_content default_address">
+                                    <input type="checkbox" value="" id="policy">
+                                    <label for="policy" class="checkbox normal">Set this address as the default</label>
+                                </div>
+                            </div>
+                            <input type="submit" class="update btn_short01" value="Update">
+                            <a class="cancel" href="">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="content_sub">
+                        <div class="ttl_desp">
+                            <h3>NEWSLETTER</h3>
+                        </div>
+                        <div class="txt_desp">
+                            <p>Enter your address to get $20 off your first orders</p>
+                        </div>
+                        <div class="form_sub">
+                            <form action="">
+                                <input type="email" placeholder="your@email.address">
+                                <button type="submit">
+                                    <img src="assets/images/envelope-regular-24.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>ADDRESS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Ha Noi</p>
+                                <p>Ho Chi Minh</p>
+                                <p>Da Nang</p>
+                                <p>Hai Phong</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>EXPLORE</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Home</p>
+                                <p>Conlection</p>
+                                <p>About us</p>
+                                <p>Contact</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>BLOGS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>News</p>
+                                <p>Fashion</p>
+                                <p>Event</p>
+                                <p>Promotion</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <div class="txt_desp">
+                        <p>@2022 Shopify. All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="time">
+                    <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/address.js"></script>
+    <script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+#wrapper {
+    &.success {
+        padding-top: 14%;
+        >.inner {
+            section {
+                &.section {
+                    &.contact_success {
+                        max-width: 1200px;
+                        width: 88.888%;
+                        margin: 0 auto 80px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        @include sp {
+                            max-width: 100%;
+                            margin: 0 auto 8vw;
+                        }
+                        @include sp_min {
+                            max-width: 100%;
+                            margin: 0 auto 10.416vw;
+                          }
+                        .form_success {
+                            background: $clr-bg-blog;
+                            padding: 70px;
+                            @include sp {
+                                padding: 7vw;
+                              }
+                              @include sp_min {
+                                padding: 9.145vw;
+                              }
+                            .notification_success {
+                                h2 {
+                                    font-size: 24px;
+                                    line-height: 45px;
+                                    font-weight: 500;
+                                    margin-bottom: 10px;
+                                    @include sp {
+                                        font-size: 3.4vw;
+                                        line-height: 5.5vw;
+                                        margin-bottom: 1vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 3.255vw;
+                                        line-height: 5.859vw;
+                                        margin-bottom: 1.302vw;
+                                    }
+                                }
+                                p {
+                                    font-size: 18px;
+                                    margin-bottom: 30px;
+                                    line-height: 35px;
+                                    @include sp {
+                                        font-size: 2.8vw;
+                                        margin-bottom: 3vw;
+                                        line-height: 4.5vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 2.604vw;
+                                        line-height: 4.557vw;
+                                        margin-bottom: 3.906vw;
+                                    }
+                                    span {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

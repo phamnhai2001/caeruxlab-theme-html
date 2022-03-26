@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding shopify theme</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="inner">
+            <div class="header_top">
+                <div class="header_top_content">
+                    <div class="header_description">Photogenic and glamorous everyday wear.</div>
+                    <ul class="header_top_nav">
+                        <li class="util_pc"><a href="#">Registration</a></li>
+                        <li class="util_pc"><a href="#">Login</a></li>
+                        <li id="header_upper-search">
+                            <div id="header_upper_search_form" class="search_content">
+                                <form role="search" method="get" action="">
+                                    <input id="header_upper_search__input" name="s" type="text" value="">
+                                    <button class="p-header__upper-search__submit icon_button">
+                                    </button>
+                                </form>
+                            </div>
+                            <button id="btn">
+                                <img src="assets/images/icon_search.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="header_welcart_cart">
+                            <a class="header_cart" href="cart.html"><span class="header_welcart_cart_label">Cart</span>
+                                <span class="header_welcart_cart_badge">
+                                    <img src="assets/images/cart.svg" alt="">
+                                </span>
+                                <span class="number">0</span>
+                            </a>
+                            <div class="header_view_cart" id="header_view_cart">
+                                <p class="wc_empty_cart">There are no items in the cart right now.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="header_main_inner">
+                    <h1 class="header_logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <div class="header_main_nav">
+                        <nav class="global_nav_container" role="navigation">
+                            <div id="menuToggle">
+                                <div id="nav_toggle">
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div id="nav_bg"></div>
+                                <div id="global_nav">
+                                    <div class="header_logo util_sp">
+                                        <a href="#">
+                                            <img src="assets/images/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <ul class="list_menu">
+                                        <li class="item_menu">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Conlection</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li class="item_menu">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li class="util_sp"><a href="#">Registration</a></li>
+                                        <li class="util_sp"><a href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <div id="wrapper_product">
+        <div class="inner">
+            <section class="section" id="product">
+                <div class="inner">
+                    <div class="product_grid">
+                        <div class="product_images">
+                            <div class="container">
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_01">
+                                        <img src="assets/images/conletc_01.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_01">
+                                        <img src="assets/images/conletc_01.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_02">
+                                        <img src="assets/images/conletc_02.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_02">
+                                        <img src="assets/images/conletc_02.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_03">
+                                        <img src="assets/images/conletc_03.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_03">
+                                        <img src="assets/images/conletc_03.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_04">
+                                        <img src="assets/images/conletc_04.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_04">
+                                        <img src="assets/images/conletc_04.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_05">
+                                        <img src="assets/images/conletc_05.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_05">
+                                        <img src="assets/images/conletc_05.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a class="lightbox" href="#conletc_06">
+                                        <img src="assets/images/conletc_06.jpg" alt="">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="conletc_06">
+                                        <img src="assets/images/conletc_06.jpg" alt="">
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_01.jpg" onclick="currentSlide(1)"
+                                            alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_02.jpg" onclick="currentSlide(2)"
+                                            alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_03.jpg" onclick="currentSlide(3)"
+                                            alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_04.jpg" onclick="currentSlide(4)"
+                                            alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_05.jpg" onclick="currentSlide(5)"
+                                            alt="">
+                                    </div>
+                                    <div class="column">
+                                        <img class="image" src="assets/images/conletc_06.jpg" onclick="currentSlide(6)"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_details">
+                            <div class="txt_desp">
+                                <h1 class="name">Product Name</h1>
+                                <p class="price">465.00</p>
+                            </div>
+                            <div class="color">
+                                <p>Color</p>
+                                <div class="color_wrapper">
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="blue">
+                                        <label for="blue">Blue</label>
+                                    </div>
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="red">
+                                        <label for="red">Red</label>
+                                    </div>
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="yellow">
+                                        <label for="yellow">Yellow</label>
+                                    </div>
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="black">
+                                        <label for="black">Black</label>
+                                    </div>
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="white">
+                                        <label for="white">White</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <p>Quantity</p>
+                                <div class="btn_quantity">
+                                    <button class="minus_btn">-</button>
+                                    <input type="number" id="quantity" value="1">
+                                    <button class="plus_btn">+</button>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button id="cart_view" type="submit" class="add_cart">
+                                    Add to cart
+                                </button>
+                                <form action="">
+                                    <button type="submit" class="btn_buy">Buy now</button>
+                                </form>
+                            </div>
+                            <div class="txt_note">
+                                <p>This is a demonstration store. You can purchase products like this from Shop</p>
+                            </div>
+                            <div class="social_icon">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/facebook_icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/linkedin_icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/twitter_icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/google_icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="assets/images/gmail_icon.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_notify" id="cart">
+                        <div class="cart_header">
+                            <div class="txt_desp">
+                                <img src="assets/images/check_icon.png" alt="">
+                                <p>Item added to your cart</p>
+                            </div>
+                            <button class="close" id="close">
+                                <a href="">
+                                    <img src="assets/images/close.png" alt="">
+                                </a>
+                            </button>
+                        </div>
+                        <div class="cart_product">
+
+                        </div>
+                        <div class="cart_links">
+                            <a class="header_cart" href="cart.html">
+                                <h3>View my cart</h3>
+                                <span class="number">0</span>
+                            </a>
+                            <!-- <a id="view" class="view" href="cart.html">
+                                        <h3>View my cart</h3>
+                                        <span>(0)</span>
+                                    </a> -->
+                            <form action="">
+                                <button class="checkout" type="submit">Check out</button>
+                            </form>
+                            <button class="continue_shopping">
+                                Continue shopping
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="review">
+                <div class="inner">
+                    <div class="tabs">
+                        <button class="tablinks show" data-electronic="product_details">Product Details</button>
+                        <button class="tablinks" data-electronic="product_review">Review</button>
+                     </div>
+                     <div class="wrapper_tabcontent">
+                        <div id="product_details" class="tabcontent show">
+                            <h3>Product Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+               
+                        <div id="product_review" class="tabcontent">
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>John</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>John</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>John</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <section class="section" id="recommended">
+                <div class="inner">
+                    <div class="ttl_product">
+                        <h3>Related Product</h3>
+                    </div>
+                    <div class="list_item">
+                        <ul id="list_recommend">
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000<span class="sold_out">Out stock</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="content_sub">
+                        <div class="ttl_desp">
+                            <h3>NEWSLETTER</h3>
+                        </div>
+                        <div class="txt_desp">
+                            <p>Enter your address to get $20 off your first orders</p>
+                        </div>
+                        <div class="form_sub">
+                            <form action="">
+                                <input type="email" placeholder="your@email.address">
+                                <button type="submit">
+                                    <img src="assets/images/envelope-regular-24.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="social_icon">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>ADDRESS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Ha Noi</p>
+                                <p>Ho Chi Minh</p>
+                                <p>Da Nang</p>
+                                <p>Hai Phong</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>EXPLORE</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>Home</p>
+                                <p>Conlection</p>
+                                <p>About us</p>
+                                <p>Contact</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ttl_category">
+                                <h3>BLOGS</h3>
+                            </div>
+                            <div class="txt_category">
+                                <p>News</p>
+                                <p>Fashion</p>
+                                <p>Event</p>
+                                <p>Promotion</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="">
+                    <div class="txt_desp">
+                        <p>@2022 Shopify. All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="time">
+                    <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script src="assets/js/product_detail.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>
+    <script>
+        function displayCart() {
+    viewCart = '';
+    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
+    cartItem.forEach(item => {
+        viewCart += `<img src="assets/images/conletc_01.jpg" alt="">
+                            <div class="product_info">
+                                <h3 class="product_name">
+                                    ${item.name}
+                                </h3>
+                                <div class="product_option">
+                                    <span class="title">Color:</span>
+                                    <span class="name">White</span>
+                                </div>
+                            </div>`
+    });
+    document.querySelector('.cart_product').innerHTML = viewCart;
+
+}
+displayCart();
+    </script>
+</body>
+
+</html>

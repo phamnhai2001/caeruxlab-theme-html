@@ -1,0 +1,139 @@
+.template-search {
+  padding-top: 15%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 88.888%;
+}
+.template-search .template-search__header {
+  margin-bottom: 80px;
+}
+.template-search .template-search__header .h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.template-search .template-search__header .template-search__search form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.template-search .template-search__header .template-search__search form .field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.template-search .template-search__header .template-search__search form .field .search__input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid;
+  padding: 15px;
+}
+.template-search .template-search__header .template-search__search form .field label {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  font-size: 12px;
+}
+.template-search .template-search__header .template-search__search form .field button {
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  background: none;
+}
+.template-search .template-search__header .template-search__search form .field button svg {
+  width: 15px;
+}
+.template-search .page-width .collection_filters .categories {
+  display: none !important;
+}
+.template-search .page-width .collection_filters .filters .txt_desp.util_pc {
+  display: none !important;
+}
+.template-search .page-width .collection_filters .filters .facets form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.template-search .page-width .collection_filters .filters .facets form .txt_desp.util_sp h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .ttl_filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .ttl_filters img {
+  width: 20px;
+  height: 20px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display {
+  border: 1px solid #dddddd;
+  background: white;
+  width: 290px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list .facets_item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list .facets_item label input {
+  margin-right: 10px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .reset {
+  border-top: 1px solid #dddddd;
+  padding: 10px;
+  text-align: right;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .reset a {
+  color: black;
+  text-underline-offset: 3px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_price .facets__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_price .facets__price input {
+  height: 30px;
+}
+.template-search .page-width .collection_filters .filters .wrapper {
+  display: none !important;
+}
+.template-search #ProductGridContainer ul li a .item_content .thumb img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

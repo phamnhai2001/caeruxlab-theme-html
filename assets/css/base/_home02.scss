@@ -1,0 +1,1692 @@
+/*
+    Header
+*/
+header {
+    &#header {
+        &.header_home02 {
+            >.inner {
+                .header_top {
+                    .header_top_content {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 1300px;
+                        align-items: center;
+                        min-height: 60px;
+                        margin: 0 auto 3px;
+                        padding: 0 40px;
+                        @include sp {
+                            max-width: 100%;
+                            min-height: 6vw;
+                            margin: 0 auto 0.3vw;
+                            padding: 0 4vw;
+                        }
+                        @include sp_min {
+                            min-height: 7.8125vw;
+                            margin: 0 auto 0.391vw;
+                            padding: 0 5.208vw;
+                        }
+                        .header_logo {
+                            display: flex;
+                            align-items: center;
+                            .logo {
+                                padding-right: 25px;
+                                @include sp {
+                                    padding-right: 2.5vw;
+                                }
+                                @include sp_min {
+                                    padding-right: 3.255vw;
+                                }
+                                a {
+                                    img {
+                                        width: 145px;
+                                        @include sp {
+                                            width: 14.5vw;
+                                        }
+                                        @include sp_min {
+                                            width: 18.880vw;
+                                        }
+                                    }
+                                }
+                            }
+                            .form_search {
+                                form {
+                                    position: relative;
+                                    input {
+                                        width: 315px;
+                                        height: 40px;
+                                        border-radius: 3px;
+                                        @include sp {
+                                            width: 31.5vw;
+                                            height: 4vw;
+                                            border-radius: 0.4vw;
+                                        }
+                                        @include sp_min {
+                                            width: 41.016vw;
+                                            height: 5.208vw;
+                                            border-radius: 0.521vw;
+                                        }
+                                    }
+                                    button {
+                                        &.btn_search {
+                                            position: absolute;
+                                            right: 0;
+                                            background: none;
+                                            height: 100%;
+                                            padding-right: 15px;
+                                            border: none;
+                                            cursor: pointer;
+                                            @include sp {
+                                                padding-right: 1.5vw;
+                                            }
+                                            @include sp_min {
+                                                padding-right: 1.953vw;
+                                            }
+                                            img {
+                                                width: 20px;
+                                                @include sp {
+                                                    width: 2vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 2.604vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .header_account_cart {
+                            display: flex;
+                            .account {
+                                a {
+                                    img {
+                                        width: 30px;
+                                        @include sp {
+                                            width: 3vw;
+                                        }
+                                        @include sp_min {
+                                            width: 3.906vw;
+                                        }
+                                    }
+                                }
+                            }
+                            .cart {
+                                margin-left: 20px;
+                                @include sp {
+                                    margin-left: 2vw;
+                                }
+                                @include sp_min {
+                                    margin-left: 2.604vw;
+                                }
+                                a {
+                                    img {
+                                        width: 30px;
+                                        @include sp {
+                                            width: 3vw;
+                                        }
+                                        @include sp_min {
+                                            width: 3.906vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .header_main {
+                    .header_main_nav {
+                        max-width: 1300px;
+                        align-items: center;
+                        min-height: 50px;
+                        display: flex;
+                        margin: 0 auto;
+                        justify-content: center;
+                        padding: 0 40px;
+                        @include sp {
+                            max-width: 100%;
+                            min-height: 5vw;
+                            padding: 0 4vw;
+                            justify-content: flex-end;
+                        }
+                        @include sp_min {
+                            min-height: 6.510vw;
+                            padding: 0 5.208vw;
+                        }
+                        nav {
+                            &.global_nav_container {
+                                #menuToggle {
+                                    #nav_bg {
+                                        @include sp {
+                                            content: "";
+                                            width: 100%;
+                                            max-width: 60vw;
+                                            height: 3300px;
+                                            bottom: 0;
+                                            display: block;
+                                            right: -38%;
+                                            position: fixed;
+                                            display: block;
+                                            background: #dddddd;;
+                                            box-shadow: 0px 0px 10px #00000029;
+                                            border-radius: 0;
+                                            transition: all .3s ease-out;
+                                            backface-visibility: hidden;
+                                            transform: scale(.02);
+                                        }
+                                        @include sp_min {
+                                            // height: 300vw;
+                                            max-width: 540px;
+                                        }
+                                    }
+                                    #nav_toggle {
+                                        @include sp {
+                                            display: block;
+                                            // position: fixed;
+                                            right: 4vw;
+                                            top: 5.9vw;
+                                            width: 53px;
+                                            height: 5.7vw;
+                                            cursor: pointer;
+                                            z-index: 1001;
+                                            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                                        }
+                                        @include sp_min {
+                                            width: 4.166vw;
+                                            right: 5.208vw;
+                                        }
+                                        div {
+                                            @include sp {
+                                                position: relative;
+                                                top: 1.9vw;
+                                                right: 0;
+                                                width: 3.5vw;
+                                                left: 0;
+                                                margin: auto;
+                                                z-index: 9999;
+                                            }
+                                            span {
+                                                @include sp {
+                                                    display: block;
+                                                    position: absolute;
+                                                    height: 0.3vw;
+                                                    width: 100%;
+                                                    background: $clr-base-font;
+                                                    left: 0;
+                                                    zoom: 1;
+                                                    -webkit-transition: .35s ease-in-out;
+                                                    transition: .35s ease-in-out;
+                                                    &:nth-child(1) {
+                                                        top: 0;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        top: 8px;
+                                                    }
+                                                    &:nth-child(3) {
+                                                        top: 16px;
+                                                    }
+                                                }
+                                                @include sp_min {
+                                                    height: 2px;
+                                                    &:nth-child(1) {
+                                                        top: 0;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        top: 1.031vw;
+                                                    }
+                                                    &:nth-child(3) {
+                                                        top: 2.1vw;
+                                                    }
+                                                }
+                                            }
+                                      }
+                                    }
+                                    #global_nav {
+                                        @include sp {
+                                            visibility: hidden;
+                                            position: absolute;
+                                            color: #3E3E3E;
+                                            top: 0;
+                                            right: 0;
+                                            width: 100%;
+                                            height: 150vh;
+                                            max-width: 520px;
+                                            // padding: 10.1vw 0;
+                                        }
+                                        @include sp_min {
+                                            padding: 0;
+                                        }
+                                        .list_menu {
+                                            display: flex;
+                                            justify-content: center;
+                                            @include sp {
+                                                padding-top: 3.5vw;
+                                                text-align: left;
+                                                opacity: 0;
+                                            }
+                                            @include sp_min {
+                                                padding-top: 0;
+                                                margin-left: 0;
+                                            }
+                                            li {
+                                                padding-right: 45px;
+                                                @include sp {
+                                                    text-align: center;
+                                                    padding-right: 0;
+                                                }
+                                                a {
+                                                    font-size: 14px;
+                                                    color: $clr-base-font;
+                                                    text-transform: uppercase;
+                                                    font-weight: 500;
+                                                    position: relative;
+                                                    @include sp {
+                                                        font-size: 1.6vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 1.823vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.open {
+                                        #nav_bg {
+                                            @include sp {
+                                                transform: scale(2);
+                                                transition: all .5s ease-out;
+                                                z-index: 999;
+                                            }
+                                        }
+                                        #nav_toggle {
+                                            @include sp {
+                                                width: 5.3vw;
+                                                height: 5.3vw;
+                                                top: 7.5vw;
+                                                right: 4.3vw;
+                                                padding: 0;
+                                                box-shadow: unset;
+                                            }
+                                            @include sp_min {
+                                                top: 7.031vw;
+                                                right: 5.208vw;
+                                            }
+                                            div {
+                                                @include sp {
+                                                    width: 3.6vw;
+                                                }
+                                                span {
+                                                    @include sp {
+                                                        height: 0.25vw;
+                                                        &:nth-child(1) {
+                                                        top: 9px;
+                                                        -webkit-transform: rotate(-135deg);
+                                                        transform: rotate(-135deg);
+                                                        zoom: 1;
+                                                        }
+                                                        &:nth-child(2) {
+                                                        width: 0;
+                                                        left: 50%;
+                                                        }
+                                                        &:nth-child(3) {
+                                                        top: 9px;
+                                                        -webkit-transform: rotate(135deg);
+                                                        transform: rotate(135deg);
+                                                        zoom: 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        #global_nav {
+                                            @include sp {
+                                                z-index: 1000;
+                                                visibility: visible;
+                                                width: 100%;
+                                                padding: 18vw 8vw;
+                                            }
+                                            .header_logo {
+                                                @include sp {
+                                                    margin: 0 auto 6.28vw;
+                                                    width: 100%;
+                                                    padding: 0;
+                                                    position: relative;
+                                                    -webkit-transition: all 0.5s ease-out;
+                                                    transition: all 0.5s ease-out;
+                                                    -webkit-transition-delay: 0.5s;
+                                                    transition-delay: 0.5s;
+                                                    opacity: 1;
+                                                }
+                                                img {
+                                                    @include sp_min {
+                                                        width: 29.947vw;
+                                                    }
+                                                }
+                                            }
+                                            .list_menu {
+                                                @include sp {
+                                                    opacity: 1;
+                                                    position: fixed;
+                                                    transition-delay: 0.8s;
+                                                    width: 52vw;
+                                                    text-align: center;
+                                                    display: block;
+                                                    right: 0;
+                                                    padding: 0;
+                                                }
+                                                @include sp_min {
+                                                    width: 520px;
+                                                }
+                                                @include sp_xmin {
+                                                    margin: 0 auto;
+                                                    padding: 0;
+                                                    width: 100%;
+                                                }
+                                                li {
+                                                    @include sp {
+                                                        margin-bottom: 3.5vw;
+                                                    }
+                                                    @include sp_min {
+                                                        margin-bottom: 5.598vw;
+                                                    }
+                                                    a {
+                                                       @include sp {
+                                                        color: $clr-base-font;
+                                                        font-size: 3.1vw;
+                                                        letter-spacing: 0.3px;
+                                                        margin-bottom: 4vw;
+                                                        text-transform: uppercase;
+                                                        font-weight: 500;
+                                                        &:hover {
+                                                            color: #999999;
+                                                        }
+                                                       }
+                                                        @include sp_xmin {
+                                                            font-size: 4.296vw;
+                                                        }
+                                                    }
+                                                    &:first-child {
+                                                        a {
+                                                            color: #999999;
+                                                            &::before {
+                                                                background-color: #999999;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Content section
+*/
+#wrapper {
+    &.home02 {
+        >.inner {
+            section {
+                &.banner {
+                    .inner {
+                        .slider_top {
+                            position: relative;
+                            .slider_item {
+                                position: relative;
+                            .txt_desp {
+                                height: 100%;
+                                overflow: hidden;
+                                width: 100%;
+                                position: absolute;
+                                background-color: #C6C6C6;
+                                left: 0;
+                                top: 0;
+                                z-index: 3;
+                                .desp_content {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 100%;
+                                    flex-direction: column;
+                                    h3 {
+                                        margin-bottom: 60px;
+                                        font-size: 28px;
+                                        line-height: 40px;
+                                        font-weight: 500;
+                                        @include sp {
+                                        margin-bottom: 6vw;
+                                        font-size: 3.8vw;
+                                        line-height: 4vw;
+                                        }
+                                        @include sp_min {
+                                        margin-bottom: 7.8125vw;
+                                        }
+                                    }
+                                    .btn_shop {
+                                        display: block;
+                                        background: #0097CC;
+                                        padding: 15px 12px;
+                                        @include sp {
+                                        padding: 0 2.5vw;
+                                        }
+                                        @include sp_min {
+                                        padding: 0.528vw 2.604vw;
+                                        }
+                                        a {
+                                            color: $clr-base;
+                                            font-size: 18px;
+                                            line-height: 20px;
+                                            font-weight: bold;
+                                            font-family: $base-font-family;
+                                            vertical-align: middle;
+                                            @include sp {
+                                                font-size: 1.8vw;
+                                                line-height: 5.0vw;
+                                            }
+                                            @include sp_min {
+                                                font-size: 2.343vw;
+                                                padding-right: 0;
+                                            }
+                                        }
+                                        img {
+                                            height: 16.9px;
+                                            vertical-align: middle;
+                                            @include sp {
+                                                height: 1.7vw;
+                                            }
+                                            @include sp_min {
+                                                height: 2.213vw;
+                                            }
+                                        }
+                                        &:hover {
+                                            background: #9b9ea157;
+                                            transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                                        }
+                                    }
+                                }
+                            }
+                            &.fade {
+                                -webkit-animation-name: fade;
+                                -webkit-animation-duration: 1.5s;
+                                animation-name: fade;
+                                animation-duration: 1.5s;
+                            }
+                            }
+                            .prev_next {
+                            .prev {
+                                z-index: 9;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 0;
+                                width: 50px;
+                                height: 50px;
+                                transition: all 0.3s ease-in-out;
+                                user-select: none;
+                                background: #D8D8D8;
+                                // opacity: 0.4;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                @include sp {
+                                width: 5vw;
+                                height: 5vw;
+                                }
+                                img {
+                                width: 28px;
+                                height: 28px;
+                                @include sp {
+                                    width: 2.8vw;
+                                    height: 2.8vw;
+                                }
+                                }
+                                &:hover {
+                                background-color: #a1a1a1;
+                                }
+                            }
+                            .next {
+                                z-index: 9;
+                                right: 0;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background: #D8D8D8;
+                                // opacity: 0.4;
+                                width: 50px;
+                                height: 50px;
+                                transition: all 0.3s ease-in-out;
+                                user-select: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                @include sp {
+                                width: 5vw;
+                                height: 5vw;
+                                }
+                                img {
+                                width: 28px;
+                                height: 28px;
+                                @include sp {
+                                    width: 2.8vw;
+                                    height: 2.8vw;
+                                }
+                                }
+                                &:hover {
+                                background-color: #a1a1a1;
+                                }
+                            }
+                            }
+                            .slider_dot {
+                            position: absolute;
+                            left: 50%;
+                            bottom: 3%;
+                            transform: translateX(-50%);
+                            z-index: 9;
+                            .dot_ {
+                                cursor: pointer;
+                                height: 15px;
+                                width: 15px;
+                                margin: 0 2px;
+                                background-color: $clr-base;
+                                border-radius: 50%;
+                                display: inline-block;
+                                transition: background-color 0.6s ease;
+                                @include sp {
+                                height: 1.5vw;
+                                width: 1.5vw;
+                                margin: 0 0.2vw;
+                                }
+                                &.active {
+                                background-color: $clr-main;
+                                }
+                                &:hover {
+                                background-color: $clr-main;
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+                &#collection {
+                    .inner {
+                        float: right;
+                        @include sp {
+                            float: none;
+                            position: relative;
+                        }
+                        .wrapper {
+                            display: flex;
+                            max-width: 1200px;
+                            margin: 0 auto 80px;
+                            background-color: #D8D8D8;
+                            padding: 50px 10px;
+                            position: relative;
+                            align-items: center;
+                            overflow: hidden;
+                            @include sp {
+                            max-width: 100%;
+                            padding: 9vw 1vw;
+                            margin: 0 auto 8vw;
+                            align-items: unset;
+                            }
+                            @include sp_min {
+                            width: 100%;
+                            padding: 9.115vw 1.302vw;
+                            margin: 0 auto 10.416vw;
+                            }
+                            .tlt_main {
+                                @include sp {
+                                    top: 2vw;
+                                    position: absolute;
+                                    left: 3vw;
+                                }
+                                @include sp_min {
+                                    top: 2.604vw;
+                                    left: 3.906vw;
+                                }
+                                span {
+                                    text-transform: uppercase;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    @include sp {
+                                        font-size: 3.5vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 4.557vw;
+                                    }
+                                }
+                            }
+                            .collection_index {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                justify-content: space-between;
+                                // width: 88%;
+                                .item {
+                                    width: 200px;
+                                    @include sp {
+                                        width: 24.5vw;
+                                    }
+                                    @include sp_min {
+                                        width: 32.8125vw;
+                                    }
+                                    a {
+                                        .item_thumbnail {
+                                            @include sp {
+                                                margin-bottom: 1vw;
+                                            }
+                                            @include sp_min {
+                                                margin-bottom: 1.302vw;
+                                            }
+                                            img {
+                                                width: 300px;
+                                                height: 160px;
+                                                object-fit: cover;
+                                                clip-path: circle(80px at 50% 50%);
+                                                @include sp {
+                                                    width: 22vw;
+                                                    height: 22vw;
+                                                    clip-path: circle(11vw at 50% 50%);
+                                                }
+                                                @include sp_min {
+                                                    width: 39.0625vw;
+                                                    height: 26.823vw;
+                                                    clip-path: circle(13.411vw at 50% 50%);
+                                                }
+                                            }
+                                        }
+                                        .txt_desp {
+                                            span {
+                                                color: $clr-base-font;
+                                                font-weight: 600;
+                                                line-height: 30px;
+                                                font-size: 14px;
+                                                @include sp {
+                                                    line-height: 3vw;
+                                                    font-size: 2.4vw;
+                                                }
+                                                @include sp_min {
+                                                    line-height: 3.906vw;
+                                                    font-size: 3.255vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .prev_next {
+                                position: absolute;
+                                top: 15px;
+                                left: 20px;
+                                display: flex;
+                                @include sp {
+                                    top: 80%;
+                                    left: 2vw;
+                                }
+                                @include sp_min {
+                                    top: 86%;
+                                    left: 2.604vw;
+                                }
+                                a {
+                                    &.prev,&.next {
+                                        img {
+                                            width: 30px;
+                                            cursor: pointer;
+                                            @include sp {
+                                                width: 4vw;
+                                            }
+                                            @include sp_min {
+                                                width: 5.208vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .all_product {
+                                position: absolute;
+                                right: 35px;
+                                top: 15px;
+                                @include sp {
+                                    right: 3.5vw;
+                                    top: 3vw;
+                                }
+                                @include sp_min {
+                                    right: 4.558vw;
+                                    top: 2.604vw;
+                                }
+                                a {
+                                    span {
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        color: $clr-base-font;
+                                        @include sp {
+                                            font-size: 2vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 2.604vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &#slider_top_product {
+                    >.inner {
+                        max-width: 1200px;
+                        width: 88.8888%;
+                        margin: 0 auto 80px;
+                        background-color: #D8D8D8;
+                        padding: 70px 20px 70px 70px;
+                        overflow: hidden;
+                        position: relative;
+                        @include sp {
+                        max-width: 100%;
+                        padding: 7vw 3vw 7vw 7vw;
+                        }
+                        @include sp_min {
+                        width: 100%;
+                        padding: 0 5.208vw;
+                        }
+                        .tlt_main {
+                            position: absolute;
+                            top: 25px;
+                            left: 25px;
+                            @include sp {
+                                top: 2.5vw;
+                                left: 2.5vw;
+                            }
+                            @include sp_min {
+                                top: 3.255vw;
+                                left: 3.255vw;
+                            }
+                            span {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 2.4vw;
+                                }
+                                @include sp_min {
+                                    font-size: 3.125vw;
+                                }
+                            }
+                        }
+                        .slider_inner {
+                            .slider_01 {
+                                display: flex;
+                                justify-content: flex-start;
+                                li {
+                                    margin: 0 10px;
+                                    min-width: 260px;
+                                    @include sp {
+                                        margin: 0 1vw;
+                                        min-width: 24.5vw;
+                                    }
+                                    @include sp_min {
+                                        margin: 0 1.302vw;
+                                    }
+                                    .c-item {
+                                        background-color: $clr-base;
+                                        color: $clr-base-font;
+                                        display: block;
+                                        position: relative;
+                                        padding: 20px;
+                                        @include sp {
+                                            padding: 2vw;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.604vw;
+                                        }
+                                        span {
+                                            &.num_top_product {
+                                                font-size: 30px;
+                                                font-weight: bold;
+                                                position: absolute;
+                                                top: -15px;
+                                                @include sp {
+                                                    font-size: 3vw;
+                                                    top: -1.5vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.906vw;
+                                                    top: -1.953vw;
+                                                }
+                                            }
+                                        }
+                                        .item_thumbnail {
+                                            margin-bottom: 10px;
+                                            @include sp {
+                                                margin-bottom: 1vw;
+                                            }
+                                            @include sp_min {
+                                                margin-bottom: 1.302vw;
+                                            }
+                                            img {
+                                               
+                                            }
+                                        }
+                                        .c-item__body {
+                                            text-align: left;
+                                            .c_category {
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                                span {
+                                                    border: 1px solid;
+                                                    font-weight: 600;
+                                                    padding: 2px 5px;
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    @include sp {
+                                                        padding: 0.2vw 0.5vw;
+                                                        font-size: 1.2vw;
+                                                    }
+                                                    @include sp_min {
+                                                        padding: 0.260vw 0.651vw;
+                                                        font-size: 1.562vw;
+                                                    }
+                                                }
+                                            }
+                                            .c-item__title {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 1.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 2.083vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                            .c-item__price {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 1.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 2.083vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                        }
+                                        .rating {
+                                            text-align: left;
+                                            img {
+                                                width: 20px;
+                                                @include sp {
+                                                    width: 2vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 2.604vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .prev_next {
+                                position: absolute;
+                                top: 15px;
+                                right: 20px;
+                                display: flex;
+                                @include sp {
+                                    top: 1.5vw;
+                                    right: 2vw;
+                                }
+                                @include sp_min {
+                                    top: 1.953vw;
+                                    right: 2.604vw;
+                                }
+                                a {
+                                    &.prev,&.next {
+                                        img {
+                                            width: 30px;
+                                            cursor: pointer;
+                                            @include sp {
+                                                width: 3vw;
+                                            }
+                                            @include sp_min {
+                                                width: 3.906vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .view_all {
+                            text-align: right;
+                            padding: 10px;
+                            @include sp {
+                                padding: 1vw;
+                            }
+                            @include sp_min {
+                                padding: 1.302vw;
+                            }
+                            a {
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: $clr-base-font;
+                                @include sp {
+                                    font-size: 1.2vw;
+                                }
+                                @include sp_min {
+                                    font-size: 1.562vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                &#container_top_product {
+                    >.inner {
+                        background-color: #D8D8D8;
+                        @include sp {
+                        max-width: 100%;
+                        width: 88.888%;
+                        padding: 5vw 3vw 3vw 3vw;
+                        margin: 0 auto 8vw;
+                        }
+                        @include sp_min {
+                        width: 100%;
+                        padding: 6.510vw 3.906vw 3.906vw 3.906vw;
+                        margin: 0 auto 10.416vw;
+                        }
+                        .tlt_main {
+                            @include sp {
+                                margin-bottom: 8vw;
+                            }
+                            @include sp_min {
+                                margin-bottom: 10.416vw;
+                            }
+                            span {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 4vw;
+                                }
+                                @include sp_min {
+                                    font-size: 4.557vw;
+                                }
+                            }
+                        }
+                        .slider_inner {
+                            .slider_01 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                li {
+                                    margin: 0 10px;
+                                    @include sp {
+                                        margin: 0 1.2vw 5vw 1.2vw;
+                                        width: 46.888%;
+                                    }
+                                    @include sp_min {
+                                        margin: 0 1.302vw 5.208vw 1.302vw;
+                                    }
+                                    .c-item {
+                                        background-color: $clr-base;
+                                        color: $clr-base-font;
+                                        display: block;
+                                        position: relative;
+                                        padding: 20px;
+                                        @include sp {
+                                            padding: 2vw;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.604vw;
+                                        }
+                                        span {
+                                            &.num_top_product {
+                                                font-size: 30px;
+                                                font-weight: bold;
+                                                position: absolute;
+                                                top: -15px;
+                                                @include sp {
+                                                    font-size: 5vw;
+                                                    top: -2.5vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 6.510vw;
+                                                    top: -2.953vw;
+                                                }
+                                            }
+                                        }
+                                        .item_thumbnail {
+                                            margin-bottom: 10px;
+                                            @include sp {
+                                                margin-bottom: 1vw;
+                                            }
+                                            @include sp_min {
+                                                margin-bottom: 1.302vw;
+                                            }
+                                            img {
+                                                @include sp {
+                                                    width: 34.8vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 38.802vw;
+                                                }
+                                            }
+                                        }
+                                        .c-item__body {
+                                            text-align: left;
+                                            .c_category {
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    margin-bottom: 2vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 2.343vw;
+                                                }
+                                                span {
+                                                    border: 1px solid;
+                                                    font-weight: 600;
+                                                    padding: 2px 5px;
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    @include sp {
+                                                        padding: 0.2vw 0.5vw;
+                                                        font-size: 2.2vw;
+                                                    }
+                                                    @include sp_min {
+                                                        padding: 0.260vw 0.651vw;
+                                                        font-size: 2.343vw;
+                                                    }
+                                                }
+                                            }
+                                            .c-item__title {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 2.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.255vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                            .c-item__price {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 2.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.255vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                        }
+                                        .rating {
+                                            text-align: left;
+                                            img {
+                                                width: 20px;
+                                                @include sp {
+                                                    width: 2vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 2.604vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.hiddenStyle {
+                                        overflow: hidden;
+                                        clip: rect(0 0 0 0);
+                                        height: 1px;
+                                        width: 1px;
+                                        margin: -1px;
+                                        padding: 0;
+                                        border: 0;
+                                    }
+                                }
+                            }
+                        }
+                        #loadMore {
+                            @include sp {
+                                background-color: $clr-base-font;
+                                color: $clr-base;
+                                padding: 2vw 10vw 2vw 7vw;
+                                border-radius: 0.7vw;
+                                font-size: 2.5vw;
+                                border: none;
+                                position: relative;
+                                &::after {
+                                    background-image: url(../images/chevron-down-regular-36.png);
+                                    position: absolute;
+                                    content: " ";
+                                    width: 5.6vw;
+                                    height: 5.6vw;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    background-size: 100% auto;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                            @include sp_min {
+                                padding: 2.604vw 13.028vw 2.604vw 9.115vw;
+                                border-radius: 0.911vw;
+                                font-size: 4.166vw;
+                                &::after {
+                                    width: 7.291vw;
+                                    height: 7.291vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                &#slider_top_televisions {
+                    >.inner {
+                        max-width: 1200px;
+                        width: 88.8888%;
+                        margin: 0 auto 80px;
+                        background-color: #D8D8D8;
+                        padding: 70px 10px;
+                        position: relative;
+                        @include sp {
+                            max-width: 100%;
+                            margin: 0 auto 8vw;
+                            padding: 7vw 3vw;
+                        }
+                        @include sp_min {
+                            width: 100%;
+                            padding: 13.208vw 3.906vw;
+                            margin: 0 auto 10.416vw;
+                        }
+                        .tlt_main {
+                            position: absolute;
+                            top: 25px;
+                            left: 25px;
+                            @include sp {
+                                top: 2.5vw;
+                                left: 2.5vw;
+                            }
+                            @include sp_min {
+                                top: 3.255vw;
+                                left: 3.255vw;
+                            }
+                            span {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 4vw;
+                                }
+                                @include sp_min {
+                                    font-size: 4.557vw;
+                                }
+                            }
+                        }
+                        .slider_inner {
+                            .slider {
+                                display: block;
+                                .slider_wrapper {
+                                    display: flex;
+                                    @include sp {
+                                        flex-direction: column;
+                                    }
+                                .thumbnail {
+                                    margin: 0 25px 0 15px;
+                                    @include sp {
+                                        margin: 0 1vw 4vw 1vw ;
+                                    }
+                                    @include sp_min {
+                                        margin: 0 1.302vw 5.208vw 1.302vw;
+                                    }
+                                    .c-item {
+                                        background-color: $clr-base;
+                                        color: $clr-base-font;
+                                        display: block;
+                                        position: relative;
+                                        padding: 20px;
+                                        @include sp {
+                                            padding: 2vw;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.604vw;
+                                        }
+                                        .item_thumbnail {
+                                            margin-bottom: 20px;
+                                            @include sp {
+                                                margin-bottom: 2vw;
+                                            }
+                                            @include sp_min {
+                                                margin-bottom: 2.604vw;
+                                            }
+                                            img {
+                                                width: 680px;
+                                                height: 540px;
+                                                object-fit: cover;
+                                                @include sp {
+                                                    width: 106vw;
+                                                    height: 43vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 88.541vw;
+                                                    height: 70.3125vw;
+                                                }
+                                            }
+                                        }
+                                        .c-item__body {
+                                            text-align: center;
+                                            .c-item__title {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 20px;
+                                                @include sp {
+                                                    font-size: 2.6vw;
+                                                    margin-bottom: 2vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 4.687vw;
+                                                    margin-bottom: 4.687vw;
+                                                }
+                                            }
+                                            .c_category {
+                                                margin-bottom: 15px;
+                                                @include sp {
+                                                    margin-bottom: 1.5vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 1.953vw;
+                                                }
+                                                span {
+                                                    border: 1px solid;
+                                                    font-weight: 600;
+                                                    border-radius: 4px;
+                                                    text-transform: uppercase;
+                                                    padding: 13px 40px;
+                                                    display: inline-block;
+                                                    font-size: 18px;
+                                                    @include sp {
+                                                        border-radius: 0.4vw;
+                                                        padding: 1.3vw 4vw;
+                                                        font-size: 1.8vw;
+                                                    }
+                                                    @include sp_min {
+                                                        border-radius: 0.521vw;
+                                                        padding: 1.693vw 5.208vw;
+                                                        font-size: 5.208vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                ul {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-wrap: wrap;
+                                    li {
+                                        margin: 0 10px 32px 10px;
+                                        @include sp {
+                                            margin: 0 1.2vw 3.2vw 1.2vw;
+                                            width: 46.888%;
+                                        }
+                                        @include sp_min {
+                                            margin: 0 1.302vw 4.166vw 1.302vw;
+                                        }
+                                        .c-item {
+                                            background-color: $clr-base;
+                                            color: $clr-base-font;
+                                            display: block;
+                                            position: relative;
+                                            padding: 20px;
+                                            @include sp {
+                                                padding: 2vw;
+                                            }
+                                            @include sp_min {
+                                                padding: 2.604vw;
+                                            }
+                                            .item_thumbnail {
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                                img {
+                                                    @include sp {
+                                                        width: 34.8vw;
+                                                    }
+                                                    @include sp_min {
+                                                        width: 38.802vw;
+                                                    }
+                                                }
+                                            }
+                                            .c-item__body {
+                                                text-align: left;
+                                                .c_category {
+                                                    margin-bottom: 10px;
+                                                    @include sp {
+                                                        margin-bottom: 1vw;
+                                                    }
+                                                    @include sp_min {
+                                                        margin-bottom: 2.343vw;
+                                                    }
+                                                    span {
+                                                        border: 1px solid;
+                                                        font-weight: 600;
+                                                        padding: 2px 5px;
+                                                        display: inline-block;
+                                                        font-size: 12px;
+                                                        @include sp {
+                                                            padding: 0.2vw 0.5vw;
+                                                            font-size: 2.2vw;
+                                                        }
+                                                        @include sp_min {
+                                                            padding: 0.260vw 0.651vw;
+                                                            font-size: 2.343vw;
+                                                        }
+                                                    }
+                                                }
+                                                .c-item__title {
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                    margin-bottom: 10px;
+                                                    @include sp {
+                                                        font-size: 2.6vw;
+                                                        margin-bottom: 1vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 3.255vw;
+                                                        margin-bottom: 1.302vw;
+                                                    }
+                                                }
+                                                .c-item__price {
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                    margin-bottom: 10px;
+                                                    @include sp {
+                                                        font-size: 2.6vw;
+                                                        margin-bottom: 1vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 3.255vw;
+                                                        margin-bottom: 1.302vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                }
+                            }
+                            .prev_next {
+                                position: absolute;
+                                top: 15px;
+                                right: 20px;
+                                display: flex;
+                                @include sp {
+                                    top: 1.5vw;
+                                    right: 3.5vw;
+                                }
+                                @include sp_min {
+                                    top: 1.953vw;
+                                    right: 2.604vw;
+                                }
+                                a {
+                                    &.prev,&.next {
+                                        img {
+                                            width: 30px;
+                                            cursor: pointer;
+                                            @include sp {
+                                                width: 3vw;
+                                            }
+                                            @include sp_min {
+                                                width: 7.161vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &#slider_recomend {
+                    >.inner {
+                        max-width: 1200px;
+                        width: 88.8888%;
+                        margin: 0 auto 80px;
+                        background-color: #D8D8D8;
+                        padding: 70px 10px;
+                        position: relative;
+                        @include sp {
+                            max-width: 100%;
+                            padding: 7vw 3vw;
+                            margin: 0 auto 8vw;
+                        }
+                        @include sp_min {
+                            width: 100%;
+                            padding: 13.208vw 3.906vw;
+                            margin: 0 auto 10.416vw;
+                        }
+                        .tlt_main {
+                            position: absolute;
+                            top: 25px;
+                            left: 25px;
+                            @include sp {
+                                top: 2.5vw;
+                                left: 2.5vw;
+                            }
+                            @include sp_min {
+                                top: 3.255vw;
+                                left: 3.255vw;
+                            }
+                            span {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 4vw;
+                                }
+                                @include sp_min {
+                                    font-size: 4.557vw;
+                                }
+                            }
+                        }
+                        .slider_inner {
+                            .slider_01 {
+                                display: flex;
+                                justify-content:flex-start;
+                                flex-wrap: wrap;
+                                overflow: auto;
+                                max-height: 1150px;
+                                @include sp {
+                                    max-height: 115vw;
+                                }
+                                @include sp_min {
+                                    max-height: 149.739vw;
+                                }
+                                li {
+                                    margin: 0 10px 32px 10px;
+                                    @include sp {
+                                        margin: 0 1.2vw 3.2vw 1.2vw;
+                                        width: 46.888%;
+                                    }
+                                    @include sp_min {
+                                        margin: 0 1.302vw 4.166vw 1.302vw;
+                                    }
+                                    .c-item {
+                                        background-color: $clr-base;
+                                        color: $clr-base-font;
+                                        display: block;
+                                        position: relative;
+                                        padding: 20px;
+                                        @include sp {
+                                            padding: 2vw;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.604vw;
+                                        }
+                                        .item_thumbnail {
+                                            margin-bottom: 10px;
+                                            @include sp {
+                                                margin-bottom: 1vw;
+                                            }
+                                            @include sp_min {
+                                                margin-bottom: 2.343vw;
+                                            }
+                                            img {
+                                                width: 230px;
+                                                @include sp {
+                                                    width: 34.8vw;
+                                                }
+                                                @include sp_min {
+                                                    width: 38.802vw;
+                                                }
+                                            }
+                                        }
+                                        .c-item__body {
+                                            text-align: left;
+                                            .c_category {
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                                span {
+                                                    border: 1px solid;
+                                                    font-weight: 600;
+                                                    padding: 2px 5px;
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    @include sp {
+                                                        padding: 0.2vw 0.5vw;
+                                                        font-size: 1.2vw;
+                                                    }
+                                                    @include sp_min {
+                                                        padding: 0.260vw 0.651vw;
+                                                        font-size: 2.343vw;
+                                                    }
+                                                }
+                                            }
+                                            .c-item__title {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 1.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.255vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                            .c-item__price {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                margin-bottom: 10px;
+                                                @include sp {
+                                                    font-size: 1.6vw;
+                                                    margin-bottom: 1vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 3.255vw;
+                                                    margin-bottom: 1.302vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.shipping {
+                    .inner {
+                        width: 100%;
+                        background-color: #f8f4f0;
+                        padding: 20px 0;
+                        @include sp {
+                            padding: 2vw 4vw;
+                        }
+                        @include sp_min {
+                            padding: 2.604vw 5.208vw;
+                        }
+                        .shipping_wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            .content_item {
+                                padding-right: 80px;
+                                @include sp {
+                                    padding-right: 8vw;
+                                }
+                                @include sp_min {
+                                    padding-right: 10.416vw;
+                                }
+                                text-align: left;
+                                img {
+
+                                }
+                               .txt_desp {
+                                    h3 {
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                        font-weight: 600;
+                                        @include sp {
+                                            font-size: 1.6vw;
+                                            line-height: 2.5vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 2.083vw;
+                                            line-height: 3.255vw;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 25px;
+                                        font-weight: 500;
+                                        color: #C6C6C6;
+                                        @include sp {
+                                            font-size: 1.4vw;
+                                            line-height: 2.5vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 1.823vw;
+                                            line-height: 3.255vw;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    padding-right: 0;
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    footer
+*/
+
+

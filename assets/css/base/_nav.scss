@@ -1,0 +1,328 @@
+header {
+    .inner {
+        .header_main {
+            background-color: $clr-base-bg;
+            nav {
+				display: flex;
+				justify-content:  sp_minace-between;
+				flex-flow: row nowrap;
+				width: 88.888%;
+				max-width: 1200px;
+                align-items: center;
+				margin: 0 auto;
+				height: 70px;
+				@include sp {
+					max-width: 100%;
+					height: 9vw;
+				}
+				@include  sp_min {
+					max-width: 100%;
+					height: 9.125vw;
+				}
+				.logo {
+					width: 135px;
+					margin: 0;
+					line-height: 1;
+					margin-right: 30px;
+					@include sp {
+						width: 13.5vw;
+						margin-right: 3vw;
+					}
+					@include  sp_min {
+						width: 15.885vw;
+						margin-right: 3.125vw;
+					}
+					a {
+						text-decoration: none;
+						display: block;
+						color: $clr-base-bg;
+						font-size: 32px;
+						text-transform: uppercase;
+						font-weight: bolder;
+						margin: 0;
+						@include sp {
+							font-size: 3.2vw;
+						}
+						@include  sp_min {
+							font-size: 3.334vw;
+						}
+					}
+				}
+				.nav_main_top {
+					#nav_toggle {
+						@include sp {
+							display: block;
+							position: fixed;
+							right: 4vw;
+							top: 7.5vw;
+							width: 53px;
+							height: 5.7vw;
+							cursor: pointer;
+							z-index: 1001;
+							-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+						}
+						@include  sp_min {
+							width: 4.166vw;
+							right: 5.208vw;
+						}
+						div {
+							@include sp {
+								position: relative;
+								top: 1.9vw;
+								right: 0;
+								width: 3.5vw;
+								left: 0;
+								margin: auto;
+							}
+							span {
+								@include sp {
+									display: block;
+									position: absolute;
+									height: 0.3vw;
+									width: 100%;
+									background: $clr-base-font;
+									left: 0;
+									zoom: 1;
+									-webkit-transition: .35s ease-in-out;
+									transition: .35s ease-in-out;
+									&:nth-child(1) {
+										top: 0;
+									}
+									&:nth-child(2) {
+										top: 8px;
+									}
+									&:nth-child(3) {
+										top: 16px;
+									}
+								}
+								@include  sp_min {
+									width: 100%;
+									height: 2px;
+									&:nth-child(1) {
+										top: 0;
+									}
+									&:nth-child(2) {
+										top: 1.031vw;
+									}
+									&:nth-child(3) {
+										top: 2.1vw;
+									}
+								}
+							}
+						}
+					}
+					#global_nav {
+						@include sp {
+							visibility: hidden;
+							position: absolute;
+							vertical-align: middle;
+							color: #3E3E3E;
+							top: 0;
+							right: 0;
+							width: 100%;
+							max-width: 540px;
+							text-align: center;
+							padding: 101px 0;
+							overflow-y: auto;
+							overflow-x: hidden;
+							height: 100vh;
+						}
+						@include  sp_min {
+							padding: 14.1vw 8.695vw;
+						}
+						ul {
+							display: flex;
+							@include sp {
+								padding-top: 3.5vw;
+								text-align: left;
+								opacity: 0;
+							}
+							@include  sp_min {
+								padding-top: 0;
+								margin-left: 0;
+							}
+							li {
+								margin: 0 15px;
+								transition: background-color .3s;
+								position: relative;
+								display: inline-block;
+								padding: 0;
+								@include sp {
+									text-align: center;
+									margin: 0 1.5vw;
+								}
+								@include  sp_min {
+									margin: 0 1.953vw;
+								}
+								a {
+									color: $clr-base-font;
+									font-weight: 700;
+									font-size: 14px;
+									transition: all .2s;
+									padding: 10px 0;
+									&:hover {
+										color: #999999;
+									}
+									@include sp {
+										font-size: 1.4vw;
+										padding: 1vw 0;
+									}
+									@include  sp_min {
+										font-size: 1.823vw;
+										padding: 1.302vw 0;
+									}
+									&:first-child {
+										margin-left: 0;
+									}
+								}
+							}
+						}
+						.header_logo {
+							opacity: 0;
+						}
+					}
+					#nav_bg {
+						@include sp {
+							width: 100%;
+							max-width: 540px;
+							height: 3300px;
+							right: -100%;
+							bottom: 0;
+							display: block;
+							position: fixed;
+							background: $clr-base;
+							box-shadow: 0px 0px 10px #00000029;
+							transition: all .3s ease-out;
+							backface-visibility: hidden;
+						}
+					}
+				}
+				&.open {
+					z-index: 9999;
+					#nav_toggle {
+						@include sp {
+							background: $clr-base-bg;
+							width: 5.3vw;
+							height: 5.3vw;
+							top: 7.5vw;
+							right: 4.3vw;
+							padding: 0;
+							box-shadow: unset;
+						}
+						@include  sp_min {
+							right: 5.208vw;
+						}
+						> div {
+							@include sp {
+								width: 3.6vw;
+							}
+							span {
+								@include sp {
+									height: 0.25vw;
+									&:nth-child(1) {
+										top: 9px;
+										-webkit-transform: rotate(-135deg);
+										transform: rotate(-135deg);
+										zoom: 1;
+									}
+									&:nth-child(2) {
+										width: 0;
+										left: 50%;
+									}
+									&:nth-child(3) {
+										top: 9px;
+										-webkit-transform: rotate(135deg);
+										transform: rotate(135deg);
+										zoom: 1;
+									}
+								}
+								@include  sp_min {
+									height: 0.25vw;
+									&:nth-child(1) {
+										top: 9px;
+										-webkit-transform: rotate(-135deg);
+										transform: rotate(-135deg);
+										zoom: 1;
+									}
+									&:nth-child(2) {
+										width: 0;
+										left: 50%;
+									}
+									&:nth-child(3) {
+										top: 9px;
+										-webkit-transform: rotate(135deg);
+										transform: rotate(135deg);
+										zoom: 1;
+									}
+								}
+							}
+						}
+					}
+					#global_nav {
+						z-index: 1000;
+						visibility: visible;
+						@include sp {
+							padding: 17.1vw 2.604vw;
+						}
+						@include  sp_min {
+							padding: 20.1vw 8.695vw;
+						}
+						ul {
+							opacity: 1;
+							transition: all 0.5s ease-out;
+							transition-delay: 0.5s;
+							width: 100%;
+							text-align: center;
+							flex-direction: column;
+							@include sp {
+								padding-top: 5.729vw;
+							}
+							@include  sp_min {
+								padding-top: 7.729vw;
+							}
+							li {
+								@include sp {
+									margin-bottom: 4.9vw;
+								}
+								@include  sp_min {
+									margin-bottom: 5.598vw;
+								}
+								a {
+									@include sp {
+										color: $clr-base-font;
+										font-size: 3.1vw;
+										letter-spacing: 0.3px;
+										margin-bottom: 4vw;
+										text-transform: uppercase;
+										font-weight: 500;
+										&:hover {
+											color: #999999;
+										}
+									}
+								}
+							}
+						}
+						.header_logo {
+							transition: all .3s ease-out;
+							transition-delay: .3s;
+							opacity: 1;
+							@include sp {
+								margin-bottom: 3.9vw;
+							}
+							@include  sp_min {
+								width: 24.154vw;
+								margin: 0 auto 5.024vw;
+							}
+						}
+					}
+					#nav_bg {
+						right: 0;
+						transition: all .3s ease-out;
+						@include  sp_min {
+						}
+					}
+				}
+			}
+        }
+    }
+}

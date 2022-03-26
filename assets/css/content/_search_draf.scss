@@ -1,0 +1,167 @@
+.template-search {
+    padding-top: 15%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 88.888%;
+    .template-search__header {
+        margin-bottom: 80px;
+        .h2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        .template-search__search {
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+                .field {
+                    position: relative;
+                    display: flex;
+                    .search__input {
+                        width: 100%;
+                        height: 55px;
+                        border: 1px solid;
+                        padding: 15px;
+                    }
+                    label {
+                        position: absolute;
+                        left: 15px;
+                        top: 6px;
+                        font-size: 12px;
+                    }
+                    button {
+                        
+                        border: 0;
+                        cursor: pointer;
+                        display: flex;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        right: 15px;
+                        top: 20px;
+                        background: none;
+                        svg {
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page-width {
+        .collection_filters {
+            .categories {
+                display: none !important;
+            }
+            .filters {
+                .txt_desp {
+                    &.util_pc {
+                        display: none !important;
+                    }
+                }
+                .facets {
+                    form {
+                        display: flex;
+                        .txt_desp {
+                            &.util_sp {
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        .facets__wrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            .js-filter {
+                                .ttl_filters {
+                                    display: flex;
+                                    align-items: center;
+                                    p {
+
+                                    }
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                                .facets_display {
+                                    border: 1px solid #dddddd;
+                                    background: white;
+                                    width: 290px;
+                                    .facets_list {
+                                        list-style: none;
+                                        padding: 15px;
+                                        margin: 0;
+                                        .facets_item {
+                                            label {
+                                                display: flex;
+                                                align-items: center;
+                                                input {
+                                                    margin-right: 10px;
+                                                }
+                                                p {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .reset {
+                                        border-top: 1px solid #dddddd;
+                                        padding: 10px;
+                                        text-align: right;
+                                        a {
+                                            color: black;
+                                            text-underline-offset: 3px;
+                                        }
+                                    }
+                                    .facets_price {
+                                        .facets__price {
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 20px 15px;
+                                            input {
+                                                height: 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .wrapper {
+                    display: none !important;
+                }
+            }
+        }
+    }
+    #ProductGridContainer {
+        ul {
+            li {
+                a {
+                    .item_content {
+                        .thumb {
+                            img {
+                                width: 200px;
+                                object-fit: cover;
+                            }
+                        }
+                        .txt_desp {
+                            h3 {
+
+                            }
+                            p {
+                                span {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

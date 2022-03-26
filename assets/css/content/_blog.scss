@@ -1,0 +1,94 @@
+#wrapper {
+  &.blog {
+    padding-top: 14%;
+    .inner {
+      section {
+        &.section {
+          &#blog {
+            background: transparent;
+            padding: 0;
+            .inner {
+              .list_item {
+                .pagi_nav {
+                  padding: 80px 0;
+                  ul {
+                    text-align: center;
+                    display: inline-block;
+                    li {
+                      display: inline-block;
+                      vertical-align: top;
+                      width: auto;
+                      margin: 0;
+                      padding: 0 5px;
+                      .page_num {
+                        border: 1px solid #ddd;
+                        color: $clr-base-font;
+                        display: inline-block;
+                        height: 40px;
+                        line-height: 40px;
+                        min-width: 40px;
+                        text-align: center;
+                        &:hover {
+                          background-color: $clr-hover;
+                          color: $clr-base;
+                        }
+                        &.current {
+                          background-color: $clr-main;
+                          color: $clr-base;
+                          border: 1px solid $clr-main;
+                          &:hover {
+                            background-color: $clr-main;
+                          }
+                        }
+                      }
+                      a {
+                        font-size: 12px;
+                        &.next {
+                          &:hover {
+                            &:before {
+                              background: url("../images/bx-chevron-right_wht.svg") no-repeat;
+                              background-size: 100% auto;
+                            }
+                          }
+                          &:before {
+                            content: "";
+                            background: url("../images/bx-chevron-right.svg") no-repeat;
+                            background-size: 100% auto;
+                            width: 20px;
+                            display: inline-block;
+                            height: 20px;
+                            vertical-align: sub;
+                          }
+                        }
+                        &.prev {
+                          &:hover {
+                            &:before {
+                              background: url("../images/bx-chevron-left_wht.svg") no-repeat;
+                              background-size: 100% auto;
+                            }
+                          }
+                          &:before {
+                            content: "";
+                            background: url("../images/bx-chevron-left.svg") no-repeat;
+                            background-size: 100% auto;
+                            width: 20px;
+                            display: inline-block;
+                            height: 20px;
+                            vertical-align: sub;
+                          }
+                        }
+                      }
+                      span {
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

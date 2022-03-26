@@ -1,0 +1,316 @@
+#wrapper {
+    &.page {
+        padding-top: 14%;
+        >.inner {
+            section {
+                &.my_page {
+                    max-width: 1200px;
+                    width: 88.888%;
+                    margin: 0 auto 80px;
+                    @include sp {
+                        max-width: 100%;
+                        margin: 0 auto 8vw;
+                    }
+                    @include sp_min {
+                        margin: 0 auto 10.416vw;
+                    }
+                    .order_info {
+                        text-align: left;
+                        background: #f7f7f7;
+                        padding: 70px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        @include sp {
+                            padding: 7vw;
+                        }
+                        @include sp_min {
+                            padding: 9.115vw;
+                        }
+                        .card_content {
+                            border-bottom: 1px solid #D6D6D6;
+                            padding: 30px 0;
+                            @include sp {
+                                padding: 3vw 0;
+                            }
+                            @include sp_min {
+                                padding: 3.906vw 0;
+                            }
+                            .title {
+                                font-size: 21px;
+                                line-height: 30px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 2.1vw;
+                                    line-height: 3vw;
+                                }
+                                @include sp_min {
+                                    font-size: 3.225vw;
+                                    line-height: 4.557vw;
+                                }
+                            }
+                            .list_order_history {
+                                li {
+                                    border-bottom: 1px solid #D6D6D6;
+                                    .item_my_page {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 22px 0;
+                                        @include sp {
+                                            padding: 2.2vw 0;
+                                        }
+                                        @include sp_min {
+                                            padding: 2.864vw 0;
+                                            flex-direction: column;
+                                        }
+                                        .info_order_history {
+                                            h3 {
+                                                margin-bottom: 16px;
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                                line-height: 30px;
+                                                text-align: left;
+                                                @include sp {
+                                                    margin-bottom: 1.6vw;
+                                                    font-size: 1.6vw;
+                                                    line-height: 3vw;
+                                                }
+                                                @include sp_min {
+                                                    margin-bottom: 2.083vw;
+                                                    font-size: 2.083vw;
+                                                    line-height: 3.906vw;
+                                                }
+                                                .send {
+                                                    font-size: 18px;
+                                                    line-height: 30px;
+                                                    text-align: left;
+                                                    color: #545857;
+                                                    margin-left: 22px;
+                                                    display: inline-block;
+                                                    @include sp {
+                                                        font-size: 1.8vw;
+                                                        line-height: 3vw;
+                                                        margin-left: 2.2vw;
+                                                    }
+                                                    @include sp_min {
+                                                        font-size: 2.343vw;
+                                                        line-height: 3.906vw;
+                                                        margin-left: 2.864vw;
+                                                    }
+                                                }
+                                            }
+                                            span {
+                                                font-size: 14px;
+                                                line-height: 19px;
+                                                text-align: left;
+                                                margin-bottom: 6px;
+                                                font-weight: 500;
+                                                display: block;
+                                                @include sp {
+                                                    font-size: 1.4vw;
+                                                    line-height: 1.9vw;
+                                                    margin-bottom: 0.6vw;
+                                                }
+                                                @include sp_min {
+                                                    font-size: 1.823vw;
+                                                    line-height: 2.474vw;
+                                                    margin-bottom: 0.781vw;
+                                                }
+                                            }
+                                        }
+                                        .btn_short {
+                                            width: 175px;
+                                            height: 50px;
+                                            color: $clr_base_font;
+                                            line-height: 50px;
+                                            text-align: center;
+                                            border-radius: 7px;
+                                            margin-top: 25px;
+                                            border: 1px solid;
+                                            font-size: 16px;
+                                            @include sp {
+                                                width: 17.5vw;
+                                                line-height: 5vw;
+                                                height: 5vw;
+                                                border-radius: 0.7vw;
+                                                margin-top: 2.5vw;
+                                                font-size: 1.6vw;
+                                            }
+                                            @include sp_min {
+                                                width: 22.786vw;
+                                                height: 6.510vw;
+                                                border-radius: 0.915vw;
+                                                line-height: 6.510vw;
+                                                margin-top: 3.255vw;
+                                                font-size: 2.083vw;
+                                            }
+                                            &:hover {
+                                                color: $clr_base;
+                                                background-color: $clr_base_font;
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        border: none;
+                                    }
+                                }
+                            }
+                            span {
+                                &.order_history {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 23px;
+                                    @include sp {
+                                        font-size: 1.8vw;
+                                        line-height: 2.5vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 2.083vw;
+                                        line-height: 3.255vw;
+                                    }
+                                }
+                            }
+                            .item {
+                                .address {
+                                    margin-bottom: 30px;
+                                    @include sp {
+                                        margin-bottom: 3vw;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 3.906vw;
+                                    }
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 23px;
+                                        @include sp {
+                                            font-size: 1.8vw;
+                                            line-height: 2.5vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 2.083vw;
+                                            line-height: 3.255vw;
+                                        }
+                                    }
+                                }
+                                .setting {
+                                    margin-bottom: 30px;
+                                    @include sp {
+                                        margin-bottom: 3vw;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 3.906vw;
+                                    }
+                                    .btn_delete {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        color: $clr_base_font;
+                                        line-height: 20px;
+                                        cursor: pointer;
+                                        padding-right: 10px;
+                                        border-right: 1px solid #D6D6D6;
+                                        @include sp {
+                                            font-size: 1.6vw;
+                                            line-height: 2.2vw;
+                                            padding-right: 1vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 1.823vw;
+                                            line-height: 3.255vw;
+                                            padding-right: 1.302vw;
+                                        }
+                                    }
+                                    a {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        color: $clr_base_font;
+                                        line-height: 20px;
+                                        padding: 0 10px;
+                                        @include sp {
+                                            font-size: 1.6vw;
+                                            line-height: 2.2vw;
+                                            padding: 0 1vw;
+                                        }
+                                        @include sp_min {
+                                            font-size: 1.823vw;
+                                            line-height: 3.255vw;
+                                            padding: 0 1.302vw;
+                                        }
+                                    }
+                                }
+                                .add_address {
+                                    border: 1px solid;
+                                    color: $clr_base;
+                                    font-size: 16px;
+                                    padding: 15px 25px;
+                                    display: inline-block;
+                                    font-weight: 500;
+                                    background: $clr_base_font;
+                                    border-radius: 5px;
+                                    @include sp {
+                                        font-size: 1.8vw;
+                                        padding: 1.5vw 2.5vw;
+                                        border-radius: 0.5vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 2.083vw;
+                                        padding: 1.953vw 3.255vw;
+                                        border-radius: 0.651vw;
+                                    }
+                                    &:hover {
+                                        background: $clr_base;
+                                        color: $clr_base_font;
+                                    }
+                                }
+                            }
+                            .setting_default {
+                                padding: 4px 12px;
+                                font-size: 16px;
+                                background: #EBEBEB;
+                                line-height: 24px;
+                                font-weight: 600;
+                                margin-bottom: 20px;
+                                display: inline-block;
+                                @include sp {
+                                    padding: 0.4vw 1.2vw;
+                                    font-size: 1.6vw;
+                                    line-height: 2.4vw;
+                                    margin-bottom: 2vw;
+                                }
+                                @include sp_min {
+                                    padding: 0.5208vw 1.562vw;
+                                    line-height: 3.255vw;
+                                    margin-bottom: 2.604vw;
+                                    font-size: 2.083vw;
+                                }
+                            }
+                            &:first-child {
+                                padding-top: 0;
+                            }
+                            &:nth-child(02) {
+                                .title {
+                                    margin-bottom: 10px;
+                                    @include sp {
+                                        margin-bottom: 1vw;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 1.302vw;
+                                    }
+                                }
+                            }
+                            &:nth-child(03) {
+                                .title {
+                                    margin-bottom: 30px;
+                                    @include sp {
+                                        margin-bottom: 3vw;
+                                    }
+                                    @include sp_min {
+                                        margin-bottom: 3.906vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "product name",
+        "image": "../assets/images/conletc_01",
+        "color": "color 01",
+        "price": "$20.25",
+        "size": "S"
+    },
+    {
+        "name": "product name",
+        "image": "../assets/images/conletc_02",
+        "color": "color 02",
+        "price": "$30.68",
+        "size": "M"
+    },
+    {
+        "name": "product name",
+        "image": "../assets/images/conletc_03",
+        "color": "color 03",
+        "price": "$90.72",
+        "size": "L"
+    },
+    {
+        "name": "product name",
+        "image": "../assets/images/conletc_04",
+        "color": "color 04",
+        "price": "$35.99",
+        "size": "S"
+    },
+    {
+        "name": "product name",
+        "image": "../assets/images/conletc_05",
+        "color": "color 05",
+        "price": "$20.55",
+        "size": "XL"
+    }
+]

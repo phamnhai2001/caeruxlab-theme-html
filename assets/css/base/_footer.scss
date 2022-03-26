@@ -1,0 +1,271 @@
+/*
+    footer
+*/
+
+footer {
+    &#footer {
+        .inner {
+            background-color: $clr-base;
+            padding: 80px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            @include sp {
+                padding: 6vw 4vw;
+                max-width: 100%;
+            }
+            @include sp_min {
+                padding: 6.25vw 5.208vw;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                @include sp {
+                    flex-direction: column;
+                }
+                .subscribe {
+                    @include sp {
+                        margin-bottom: 4vw;
+                    }
+                    @include sp_min {
+                        margin-bottom: 5.208vw;
+                    }
+                    .content_sub {
+                        text-align: left;
+                        .ttl_desp {
+                            margin-bottom: 30px;
+                            @include sp {
+                                margin-bottom: 3vw;
+                            }
+                            @include sp {
+                                margin-bottom: 3.906vw;
+                            }
+                            h3 {
+                                color: $clr-base-font;
+                                font-size: 18px;
+                                font-weight: bold;
+                                letter-spacing: -0.5px;
+                                @include sp {
+                                    font-size: 2.1vw;
+                                    letter-spacing: 0;
+                                }
+                                @include sp_min {
+                                    font-size: 2.734vw;
+                                }
+                            }
+                        }
+                        .txt_desp {
+                            margin-bottom: 45px;
+                            @include sp {
+                                margin-bottom: 4.5vw;
+                            }
+                            @include sp_min {
+                                margin-bottom: 3.906vw;
+                            }
+                            p {
+                                color: #7f7b7b;
+                                font-size: 14px;
+                                font-weight: 500;
+                                @include sp {
+                                    font-size: 2.1vw;
+                                }
+                                @include sp_min {
+                                    font-size: 2.734vw;
+                                }
+                            }
+                        }
+                        .form_sub {
+                            margin-bottom: 15px;
+                            @include sp {
+                                margin-bottom: 0.5vw;
+                            }
+                            @include sp_min {
+                                margin-bottom: 0.651vw;
+                            }
+                            form {
+                                position: relative;
+                                input {
+                                    padding: 16px 25px 16px 25px;
+                                    width: 100%;
+                                    margin-right: 10px;
+                                    height: 45px;
+                                    border-radius: 0;
+                                    font-size: 14px;
+                                    @include sp {
+                                        padding: 1.6vw 2.5vw 1.6vw 2.5vw;
+                                        margin-right: 1vw;
+                                        font-size: 1.4vw;
+                                        height: 5.5vw;
+                                        margin-bottom: 1.5vw;
+                                    }
+                                    @include sp_min {
+                                        margin-right: 1.302vw;
+                                        font-size: 1.823vw;
+                                        height: 7.161vw;
+                                        padding: 2.083vw 3.255vw 2.083vw 3.255vw;
+                                    }
+                                }
+                                button {
+                                    background: none;
+                                    border: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    top: 10px;
+                                    right: 5px;
+                                    @include sp {
+                                        top: 1vw;
+                                        right: 0.5vw;
+                                    }
+                                    @include sp_min {
+                                        top: 1.302vw;
+                                        right: 0.651vw;
+                                    }
+                                    img {
+                                        width: 20px;
+                                        @include sp {
+                                            width: 2vw;
+                                        }
+                                        @include sp_min {
+                                            width: 2.604vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .social_icon {
+                            ul {
+                                li {
+                                    a {
+                                        i {
+                                            color: $clr-base-font;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .category {
+                    width: 50%;
+                    @include sp {
+                        width: 100%;
+                    }
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0 auto;
+                        li {
+                            text-align: left;
+                            width: 33.333%;
+                            @include sp_min {
+                                margin-bottom: 4.557vw;
+                            }
+                            .ttl_category {
+                                margin-bottom: 20px;
+                                @include sp {
+                                    margin-bottom: 2vw;
+                                }
+                                h3 {
+                                    color: $clr-base-font;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    letter-spacing: -0.43px;
+                                    @include sp {
+                                        font-size: 2.2vw;
+                                        letter-spacing: 0;
+                                    }
+                                    @include sp_min {
+                                        font-size: 3.255vw;
+                                    }
+                                }
+                            }
+                            .txt_category {
+                                p {
+                                    color: #7f7b7b;
+                                    font-size: 14px;
+                                    margin-bottom: 20px;
+                                    font-weight: 500;
+                                    @include sp {
+                                        font-size: 1.6vw;
+                                        margin-bottom: 2vw;
+                                    }
+                                    @include sp_min {
+                                        font-size: 2.604vw;
+                                        margin-bottom: 2.604vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            border-top: 1px solid #c6c6c6;
+            padding: 25px 0;
+            @include sp {
+                padding: 2.5vw 4vw;
+            }
+            @include sp_min {
+                padding: 3.255vw 5.208vw;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                @include sp {
+                    max-width: 100%;
+                }
+                .logo {
+                    display: flex;
+                    align-items: flex-end;
+                    img {
+                        width: 180px;
+                        @include sp {
+                            width: 18vw;
+                        }
+                        @include sp_min {
+                            width: 23.4375vw;
+                        }
+                    }
+                    .txt_desp {
+                        margin-left: 10px;
+                        @include sp {
+                            margin-left: 1vw;
+                        }
+                        @include sp_min {
+                            margin-left: 1.302vw;
+                        }
+                        p {
+                            font-size: 12px;
+                            color: #7d7d7d;
+                            font-weight: 500;
+                            @include sp {
+                                font-size: 1.2vw;
+                            }
+                            @include sp_min {
+                                font-size: 1.5625vw;
+                            }
+                        }
+                    }
+                }
+                .time {
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                        @include sp {
+                            font-size: 1.4vw;
+                        }
+                        @include sp_min {
+                            font-size: 1.823vw;
+                        }
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+#wrapper {
+    &.login_false {
+        padding-top: 14%;
+        .inner {
+            section {
+                &.login_f {
+                    .upper {
+                        max-width: 1200px;
+                        width: 88.888%;
+                        padding: 0;
+                        margin: 0 auto 80px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        @include sp {
+                            max-width: 100%;
+                            margin: 0 auto 8vw;
+                        }
+                        @include sp_min {
+                            margin: 0 auto 10.416vw;
+                        }
+                        .login_wrapper {
+                            background: $clr-bg-blog;
+                            padding: 70px;
+                            @include sp {
+                                padding: 7vw;
+                            }
+                            @include sp_min {
+                                padding: 9.115vw;
+                            }
+                            .tlt_login_f {
+                                font-size: 20px;
+                                line-height: 30px;
+                                margin-bottom: 30px;
+                                font-weight: 600;
+                                @include sp {
+                                    font-size: 2vw;
+                                    line-height: 3vw;
+                                    margin-bottom: 3vw;
+                                }
+                                @include sp_min {
+                                    font-size: 2.604vw;
+                                    line-height: 3.906vw;
+                                    margin-bottom: 3.906vw;
+                                }
+                                span {
+                                    &.txt_desp {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .btn_short01 {
+                                background: $clr-base-font;
+                                color: $clr-base;
+                                font-weight: 600;
+                                padding: 15px 70px;
+                                line-height: 55px;
+                                font-size: 22px;
+                                @include sp {
+                                    padding: 1.5vw 7vw;
+                                    line-height: 5.5vw;
+                                    font-size: 2.2vw;
+                                }
+                                @include sp_min {
+                                    padding: 1.953vw 9.115vw;
+                                    line-height: 7.161vw;
+                                    font-size: 2.845vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+    .template-search {
+        padding-top: 15%;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 88.888%;
+        .template-search__header {
+            margin-bottom: 80px;
+            .h2 {
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 40px;
+                margin-bottom: 30px;
+            }
+            .template-search__search {
+                form {
+                    max-width: 500px;
+                    margin: 0 auto;
+                    .field {
+                        position: relative;
+                        display: flex;
+                        .search__input {
+                            width: 100%;
+                            height: 55px;
+                            border: 1px solid;
+                            padding: 15px;
+                        }
+                        label {
+                            position: absolute;
+                            left: 15px;
+                            top: 6px;
+                            font-size: 12px;
+                        }
+                        button {
+                            
+                            border: 0;
+                            cursor: pointer;
+                            display: flex;
+                            overflow: hidden;
+                            padding: 0;
+                            position: absolute;
+                            right: 15px;
+                            top: 20px;
+                            background: none;
+                            svg {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .page-width {
+            .facets-container {
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                grid-template-rows: repeat(2,auto);
+                .facets {
+                    display: block;
+                    grid-column-start: span 2;
+                    form {
+                        display: grid;
+                        gap: 0 50px;
+                        grid-template-columns: 1fr max-content max-content;
+                        margin-bottom: 5px;
+                        .facets__wrapper {
+                            display: flex;
+                            h2 {
+                                margin-right: 15px;
+                            }
+                            details {
+                                margin-right: 35px;
+                                position: relative;
+                                .facets__summary {
+                                    list-style: none;
+                                    div {
+                                        span {
+                                            font-weight: 500;
+                                        }
+                                        svg {
+                                            width: 10px;
+                                        }
+                                    }
+                                }
+                                .facets__display {
+                                    border: 1px solid #f3f3f3;
+                                    position: absolute;
+                                    overflow-y: auto;
+                                    width: 350px;
+                                    max-height: 250px;
+                                    background: white;
+                                    top: 40px;
+                                    .facets__header {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 20px;
+                                        span {
+                                            font-size: 15px;
+                                        }
+                                        .facets__reset {
+                                            font-size: 14px;
+                                            color: black;
+                                            text-decoration: underline;
+                                            text-underline-offset: 3px;
+                                        }
+                                    }
+                                    .facets__list {
+                                        border-top: 1px solid #f3f3f3;
+                                        padding: 20px;
+                                        .list-menu__item {
+                                            display: flex;
+                                            margin-bottom: 15px;
+                                            &:last-child {
+                                                margin-bottom: 0;
+                                            }
+                                            .facet-checkbox {
+                                                position: relative;
+                                                font-size: 15px;
+                                                input {
+                                                    position: absolute;
+                                                    &:checked~.icon-checkmark {
+                                                        visibility: visible;
+                                                    }
+                                                }
+                                                svg {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    margin-right: 10px;
+                                                }
+                                                .icon-checkmark {
+                                                    visibility: hidden;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    z-index: 5;
+                                                    left: 3px;
+                                                    width: 13px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .facets__price {
+                                        border-top: 1px solid #f3f3f3;
+                                        padding: 20px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        .field-currency {
+                                            
+                                        }
+                                        .field {
+                                            position: relative;
+                                            .field__input {
+                                                border: 1px solid;
+                                                padding: 15px;
+                                            }
+                                            .field__label {
+                                                position: absolute;
+                                                left: 15px;
+                                                top: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .active-facets {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            grid-column: 1 / -1;
+                            grid-row: 2;
+                            margin-top: 5px;
+                        }
+                        .sorting {
+                            align-items: flex-start;
+                            display: flex;
+                            grid-column: 2;
+                            grid-row: 1;
+                            .facet-filters__field {
+                                align-items: center;
+                                display: flex;
+                                flex-grow: 1;
+                                justify-content: flex-end;
+                                h2 {
+                                    padding-right: 15px;
+                                }
+                                .select {
+                                    position: relative;
+                                    select {
+                                        border: 0;
+                                        width: 100%;
+                                        padding-right: 15px;
+                                        font-size: 16px;
+                                    }
+                                    svg {
+                                        position: absolute;
+                                        width: 10px;
+                                        right: 0;
+                                        top: 6px;
+                                    }
+                                }
+                            }
+                        }
+                        .product-count {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }

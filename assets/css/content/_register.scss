@@ -1,0 +1,361 @@
+#wrapper {
+    &.register {
+      padding-top: 14%;
+      section {
+        &.section {
+          &#content {
+            .inner {
+              max-width: 1200px;
+              width: 88.888%;
+              margin: 0 auto 80px;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              @include sp {
+                max-width: 100%;
+                margin: 0 auto 8vw;
+              }
+              @include sp_min {
+                max-width: 100%;
+                margin: 0 auto 10.416vw;
+              }
+              .register_wrapper {
+                background: $clr-bg-blog;
+                padding: 70px;
+                display: flex;
+                @include sp {
+                  flex-direction: column;
+                  padding: 7vw;
+                }
+                @include sp_min {
+                  padding: 9.145vw;
+                }
+                .register_form {
+                  width: 50%;
+                  @include sp {
+                    width: 100%;
+                    border-bottom: 1px solid #D6D6D6;
+                    padding-bottom: 4vw;
+                    margin-bottom: 4vw;
+                  }
+                  h3 {
+                    font-size: 24px;
+                    line-height: 31px;
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    text-align: center;
+                    @include sp {
+                      font-size: 4.1vw;
+                      line-height: 5.1vw;
+                      margin-bottom: 3vw;
+                    }
+                    @include sp_min {
+                      font-size: 5.208vw;
+                      line-height: 6.510vw;
+                      margin-bottom: 3.906vw;
+                    }
+                  }
+                  form {
+                    ul {
+                      li {
+                        margin-bottom: 20px;
+                        padding: 0 40px;
+                        @include sp {
+                          margin-bottom: 2.5vw;
+                          padding: 0 4vw;
+                        }
+                        @include sp_min {
+                          margin-bottom: 3.255vw;
+                          padding: 0 5.208vw;
+                        }
+                        a {
+                          font-size: 12px;
+                          line-height: 20px;
+                          margin-bottom: 13px;
+                          font-weight: 500;
+                          color: $clr-base-font;
+                          @include sp {
+                            font-size: 1.8vw;
+                          }
+                          @include sp_min {
+                            font-size: 2.343vw;
+                          }
+                        }
+                      }
+                    }
+                    .btn_register {
+                      padding: 0 40px;
+                      @include sp {
+                        padding: 0 4vw;
+                      }
+                      @include sp_min {
+                        padding: 0 5.208vw;
+                      }
+                      button {
+                        width: 100%;
+                        padding: 18px;
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                        color: $clr-base;
+                        cursor: pointer;
+                        background: $clr-base-font;
+                        border: none;
+                        @include sp {
+                          width: 100%;
+                          padding: 1.9vw;
+                          font-size: 2.6vw;
+                          margin-bottom: 2.5vw;
+                        }
+                        @include sp_min {
+                          padding: 2.473vw;
+                          font-size: 3.385vw;
+                          margin-bottom: 3.255vw;
+                        }
+                      }
+                      .txt_confirm {
+                        margin-bottom: 20px;
+                        @include sp {
+                          margin-bottom: 2vw;
+                        }
+                        @include sp_min {
+                          margin-bottom: 2.604vw;
+                        }
+                        input {
+                          margin: 0 auto;
+                          display: inline-block;
+                          position: relative;
+                          padding: 0 0 20px 20px;
+                          outline: none;
+                          line-height: 30px;
+                          vertical-align: middle;
+                          font-weight: 500;
+                          @include sp {
+                            padding: 0 0 2vw 2vw;
+                            line-height: 3vw;
+                          }
+                          @include sp_min {
+                            padding: 0 0 2.604vw 2.604vw;
+                            line-height: 3.906vw;
+                          }
+                          &::before {
+                            content: '';
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            border: 1px solid #121212;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            cursor: pointer;
+                            @include sp {
+                              width: 1.5vw;
+                              height: 1.5vw;
+                            }
+                            @include sp_min {
+                              width: 1.953vw;
+                              height: 1.953vw;
+                            }
+                          }
+                          &:checked::after {
+                            content: '';
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            background-image: url(../images/check_white.png);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-size: 100% auto;
+                            background-color: $clr-base-font;
+                            border: 1px solid #121212;
+                            cursor: pointer;
+                            @include sp {
+                              width: 1.5vw;
+                              height: 1.5vw;
+                            }
+                            @include sp_min {
+                              width: 1.953vw;
+                              height: 1.953vw;
+                            }
+                          }
+                        }
+                        label {
+                          vertical-align: middle;
+                          font-size: 12px;
+                          line-height: 20px;
+                          font-weight: 500;
+                          @include sp {
+                            font-size: 1.6vw;
+                            line-height: 2vw;
+                          }
+                          @include sp_min {
+                            font-size: 2.083vw;
+                            line-height: 2.604vw;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .rules_information {
+                      width: 100%;
+                      margin: 0 auto;
+                      padding: 0 40px;
+                      @include sp {
+                        padding: 0 4vw;
+                      }
+                      @include sp_min {
+                        padding: 0 5.208vw;
+                      }
+                      p {
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: 600;
+                        color: $clr-base-font;
+                        margin-bottom: 20px;
+                        text-align: left;
+                        @include sp {
+                          font-size: 1.8vw;
+                          line-height: 2.6vw;
+                          margin-bottom: 2vw;
+                        }
+                        @include sp_min {
+                          font-size: 2.343vw;
+                          line-height: 3.385vw;
+                          margin-bottom: 2.604vw;
+                        }
+                      }
+                  }
+                }
+                .register_sns {
+                  width: 50%;
+                  border-left: 1px solid #D6D6D6;
+                  @include sp {
+                    width: 100%;
+                    border-left: none;
+                  }
+                  h3 {
+                    font-size: 21px;
+                    line-height: 31px;
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                    text-align: center;
+                    @include sp {
+                      font-size: 4.1vw;
+                      line-height: 5.1vw;
+                      margin-bottom: 3vw;
+                    }
+                    @include sp_min {
+                      font-size: 5.208vw;
+                      line-height: 7.8125vw;
+                      margin-bottom: 3.906vw;
+                    }
+                  }
+                  .vertical_list_register {
+                    li {
+                      margin-bottom: 20px;
+                      @include sp {
+                        margin-bottom: 2vw;
+                      }
+                      @include sp_min {
+                        margin-bottom: 2.604vw;
+                      }
+                      a {
+                        &.btn {
+                          margin: auto;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          width: 100%;
+                          max-width: 350px;
+                          height: 65px;
+                          border-radius: 7px;
+                          color: $clr-base;
+                          font-size: 20px;
+                          text-transform: none;
+                          letter-spacing: 1.6px;
+                          position: relative;
+                          padding: 8px 5px;
+                          font-weight: 700;
+                          border: none;
+                          @include sp {
+                            max-width: 100%;
+                            height: 7.5vw;
+                            border-radius: 0.7vw;
+                            font-size: 2.4vw;
+                            letter-spacing: 0.16vw;
+                            padding: 0.8vw 0.5vw;
+                          }
+                          @include sp_min {
+                            height: 9.765vw;
+                            border-radius: 0.911vw;
+                            font-size: 3.125vw;
+                            letter-spacing: 0.13vw;
+                            padding: 1.041vw 0.65vw;
+                          }
+                          &.facebook {
+                            background-color: #4267B2;
+                          }
+                          &.twitter {
+                            background-color: #55ADEF;
+                          }
+                          &.instagram {
+                            background-color: #40729C;
+                          }
+                          &.amazon {
+                            background-color: #FF9902;
+                          }
+                          &.line {
+                            background-color: #4BC104;
+                            img {
+                              width: 35px;
+                              height: 35px;
+                              @include sp {
+                                width: 4.5vw;
+                                height: 4.5vw;
+                              }
+                              @include sp_min {
+                                width: 5.859vw;
+                                height: 5.859vw;
+                              }
+                            }
+                          }
+                          &.spotify {
+                            background-color: #000000;
+                          }
+                          &.google {
+                            background-color: #DD4B39;
+                          }
+                          &.linkedin {
+                            background-color: #007CB6;
+                          }
+                          i {
+                            @include sp {
+                              font-size: 3.4vw;
+                            }
+                            @include sp_min {
+                              font-size: 4.427vw;
+                            }
+                          }
+                        }
+                        span {
+                          width: 270px;
+                          padding-left: 20px;
+                          text-align: left;
+                          letter-spacing: -0.1px;
+                          @include sp {
+                            width: 65%;
+                            padding-left: 7vw;
+                          }
+                          @include sp_min {
+                            padding-left: 9.115vw;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

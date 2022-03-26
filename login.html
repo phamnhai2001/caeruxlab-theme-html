@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding shopify theme</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header -->
+<header id="header" class="header">
+    <div class="inner">
+        <div class="header_top">
+            <div class="header_top_content">
+                <div class="header_description">Photogenic and glamorous everyday wear.</div>
+                <ul class="header_top_nav">
+                    <li class="util_pc"><a href="#">Registration</a></li>
+                    <li class="util_pc"><a href="#">Login</a></li>
+                    <li id="header_upper-search">
+                        <div id="header_upper_search_form" class="search_content">
+                            <form role="search" method="get" action="">
+                                <input id="header_upper_search__input" name="s" type="text" value="">
+                                <button class="p-header__upper-search__submit icon_button">
+                                </button>
+                            </form>
+                        </div>
+                        <button id="btn">
+                            <img src="assets/images/icon_search.svg" alt="">
+                        </button>
+                    </li>
+                    <li class="header_welcart_cart">
+                        <a class="header_cart" href="#"><span class="header_welcart_cart_label">Cart</span>
+                            <span class="header_welcart_cart_badge">
+                                    <img src="assets/images/cart.svg" alt="">
+                                </span>
+                        </a>
+                        <div class="header_view_cart" id="header_view_cart">
+                            <p class="wc_empty_cart">There are no items in the cart right now.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_main">
+            <div class="header_main_inner">
+                <h1 class="header_logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="header_main_nav">
+                    <nav class="global_nav_container" role="navigation">
+                        <div id="menuToggle">
+                            <div id="nav_toggle">
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div id="nav_bg"></div>
+                            <div id="global_nav">
+                                <div class="header_logo util_sp">
+                                    <a href="#">
+                                        <img src="assets/images/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <ul class="list_menu">
+                                    <li class="item_menu">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Conlection</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li class="util_sp"><a href="#">Registration</a></li>
+                                    <li class="util_sp"><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div id="wrapper" class="login">
+    <div class="inner">
+        <div class="upper">
+            <div class="navi_top">
+                <ul>
+                    <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                    <li><span class="current">Login</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner -->
+        <section class="section" id="content">
+            <div class="inner">
+                <div class="login_wrapper">
+                    <div class="login_form">
+                        <h3>Login</h3>
+                        <form action="" novalidate="novalidate" id="login">
+                            <ul>
+                                <li>
+                                    <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
+                                    <span class="form_message"></span>
+                                </li>
+                                <li>
+                                    <input type="password" value="" name="password" id="password" placeholder="This is password" class="lg_input">
+                                    <span class="form_message"></span>
+                                </li>
+                                <li>
+                                    <a class="tlt_bottom_login" href="#">Click here if you have forgotten your password</a>
+                                </li>
+                            </ul>
+                            <div class="btn_login">
+                                <button type="submit"  class="btn_login">Login</button>
+                                <p class="txt_confirm">
+                                    <input type="checkbox" value="" id="policies">
+                                    <label for="policies" class="checkbox normal">Omitting ID input from next time</label>
+                                </p>
+                                <a class="bottom_res" href="#">First time users (new member registration)</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="login_sns">
+                        <h3>Login with social</h3>
+                        <ul class="vertical_list_login">
+                            <li>
+                                <a href="#" class="btn btn_social facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span>Login with Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-social twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span>Login with Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social instagram">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span>Login with Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social amazon">
+                                    <i class="fa fa-amazon" aria-hidden="true"></i>
+                                    <span>Login with Amazon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social line">
+                                    <img src="assets/images/line3.png" alt="">
+                                    <p></p>
+                                    <span>Login with LINE</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social spotify">
+                                    <i style="color: #1bd75f;" class="fa fa-spotify" aria-hidden="true"></i>
+                                    <span>Login with Spotify</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social google">
+                                    <i class="fa fa-google" aria-hidden="true"></i>
+                                    <span>Login with Google</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn_social linkedin">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span>Login with Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /banner -->
+    </div>
+</div>
+<!-- footer -->
+<footer id="footer">
+    <div class="inner">
+        <div class="container">
+            <div class="subscribe">
+                <div class="content_sub">
+                    <div class="ttl_desp">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                    <div class="txt_desp">
+                        <p>Enter your address to get $20 off your first orders</p>
+                    </div>
+                    <div class="form_sub">
+                        <form action="">
+                            <input type="email" placeholder="your@email.address">
+                            <button type="submit">
+                                <img src="assets/images/envelope-regular-24.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="social_icon">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <ul>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>ADDRESS</h3>
+                        </div>
+                        <div class="txt_category">
+                            <p>Ha Noi</p>
+                            <p>Ho Chi Minh</p>
+                            <p>Da Nang</p>
+                            <p>Hai Phong</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>EXPLORE</h3>
+                        </div>
+                        <div class="txt_category">
+                            <p>Home</p>
+                            <p>Conlection</p>
+                            <p>About us</p>
+                            <p>Contact</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>BLOGS</h3>
+                        </div>
+                        <div class="txt_category">
+                            <p>News</p>
+                            <p>Fashion</p>
+                            <p>Event</p>
+                            <p>Promotion</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+                <div class="txt_desp">
+                    <p>@2022 Shopify. All Right Reserved</p>
+                </div>
+            </div>
+            <div class="time">
+                <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/validator.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
