@@ -51,53 +51,48 @@
                 </div>
             </div>
             <div class="header_main">
-                <div class="header_main_inner">
-                    <h1 class="header_logo">
-                        <a href="#">
+
+                <nav>
+                    <div class="logo">
+                        <a href="" class="logo">
                             <img src="assets/images/logo.png" alt="">
                         </a>
-                    </h1>
-                    <div class="header_main_nav">
-                        <nav class="global_nav_container" role="navigation">
-                            <div id="menuToggle">
-                                <div id="nav_toggle">
-                                    <div>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div id="nav_bg"></div>
-                                <div id="global_nav">
-                                    <div class="header_logo util_sp">
-                                        <a href="#">
-                                            <img src="assets/images/logo.png" alt="">
-                                        </a>
-                                    </div>
-                                    <ul class="list_menu">
-                                        <li class="item_menu">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="item_menu">
-                                            <a href="#">Conlection</a>
-                                        </li>
-                                        <li class="item_menu">
-                                            <a href="#">About us</a>
-                                        </li>
-                                        <li class="item_menu">
-                                            <a href="#">Blog</a>
-                                        </li>
-                                        <li class="item_menu">
-                                            <a href="#">Contact</a>
-                                        </li>
-                                        <li class="util_sp"><a href="#">Registration</a></li>
-                                        <li class="util_sp"><a href="#">Login</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
                     </div>
-                </div>
+                    <div class="nav_main_top" id="menuToggle">
+                        <div id="nav_toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="nav_bg"></div>
+                        <div id="global_nav">
+                            <div class="header_logo util_sp">
+                                <a href="">
+                                    <img src="assets/images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <ul class="list_item">
+                                <li class="item_menu">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a href="#">Conlection</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a href="#">About us</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -107,8 +102,8 @@
             <div class="txt_desp">
                 <h3>Shop Collection</h3>
             </div>
-            <div class="collection_section">
-                <div class="collection_filters">
+            <div class="collection_section ">
+                <div class="collection_filters util_pc">
                     <div class="categories util_pc">
                         <div class="txt_desp">
                             <h3>Categories</h3>
@@ -163,7 +158,7 @@
                                     <ul class="facets_list">
                                         <li class="facets_item">
                                             <label for="">
-                                                <input type="checkbox" value="in stock" >
+                                                <input type="checkbox" value="in stock">
                                                 <p class="txt_label">In stock (5)</p>
                                             </label>
                                         </li>
@@ -174,7 +169,7 @@
                                             </label>
                                         </li>
                                     </ul>
-                                    <div class="reset" >
+                                    <div class="reset">
                                         <a href="">Reset</a>
                                     </div>
                                 </div>
@@ -269,6 +264,395 @@
                         </div>
                     </div>
                 </div>
+                <menu-drawer class="util_sp mobile-facets__wrapper  medium-hide large-up-hide" data-breakpoint="mobile">
+                    <details class="mobile-facets__disclosure disclosure-has-popup">
+                        <summary class="mobile-facets__open-wrapper focus-offset">
+                            <span class="mobile-facets__open">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                    role="presentation" class="icon icon-filter" fill="none" viewBox="0 11 20 20">
+                                    <line x1="16.5" y1="17.5" x2="3.5" y2="17.5" stroke="#3F7972"
+                                        stroke-linecap="round" />
+                                    <line x1="16.5" y1="24.5" x2="3.5" y2="24.5" stroke="#3F7972"
+                                        stroke-linecap="round" />
+                                    <circle cx="13" cy="24.5" r="2" fill="white" stroke="#3F7972" />
+                                    <circle cx="7" cy="17.5" r="2" fill="white" stroke="#3F7972" />
+                                </svg>
+
+                                <span class="mobile-facets__open-label button-label">
+                                    Fitler and sort
+                                </span>
+                            </span>
+                            <span tabindex="0" class="mobile-facets__close mobile-facets__close--no-js">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                    role="presentation" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+                                    <path
+                                        d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z"
+                                        fill="currentColor">
+                                </svg>
+                            </span>
+                        </summary>
+                        <facet-filters-form>
+                            <form id="FacetFiltersFormMobile" class="mobile-facets">
+                                <div class="mobile-facets__inner">
+                                    <div class="mobile-facets__header">
+                                        <div class="mobile-facets__header-inner">
+                                            <h2 class="mobile-facets__heading">
+                                                Filter and sort
+                                            </h2>
+                                            <p class="mobile-facets__count">
+                                                6 products
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-facets__main">
+                                        <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}"
+                                            class="mobile-facets__details js-filter"
+                                            data-index="mobile-{{ forloop.index }}">
+                                            <summary class="mobile-facets__summary focus-inset">
+                                                <div>
+                                                    <span>Availability</span>
+                                                    <span class="mobile-facets__arrow no-js-hidden">
+                                                        <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                            focusable="false" role="presentation"
+                                                            class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                                fill="currentColor">
+                                                        </svg>
+                                                    </span>
+                                                    <noscript>
+
+                                                    </noscript>
+                                                </div>
+                                            </summary>
+                                            <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                                                class="mobile-facets__submenu">
+                                                <button class="mobile-facets__close-button link link--text focus-inset"
+                                                    aria-expanded="true" type="button">
+                                                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                        focusable="false" role="presentation" class="icon icon-arrow"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                            fill="currentColor">
+                                                    </svg>
+                                                    Availability
+                                                </button>
+                                                <ul class="mobile-facets__list list-unstyled" role="list">
+                                                    <li class="mobile-facets__item list-menu__item">
+                                                        <label
+                                                            for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                            class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
+                                                            <input class="mobile-facets__checkbox" type="checkbox"
+                                                                name="{{ value.param_name }}" value="{{ value.value }}"
+                                                                id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                                {% if value.active %}checked{% endif %} {% if
+                                                                value.count==0 and value.active==false %}disabled{%
+                                                                endif %}>
+
+                                                            <span class="mobile-facets__highlight"></span>
+
+                                                            <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16"
+                                                                aria-hidden="true" focusable="false">
+                                                                <rect width="16" height="16" stroke="currentColor"
+                                                                    fill="none" stroke-width="1"></rect>
+                                                            </svg>
+
+                                                            <svg class="icon icon-checkmark" width="1.1rem"
+                                                                height="0.7rem" viewBox="0 0 11 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                                    stroke="currentColor" stroke-width="1.75"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                            In stock (5)
+                                                        </label>
+                                                    </li>
+                                                    <li class="mobile-facets__item list-menu__item">
+                                                        <label
+                                                            for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                            class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
+                                                            <input class="mobile-facets__checkbox" type="checkbox"
+                                                                name="{{ value.param_name }}" value="{{ value.value }}"
+                                                                id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                                {% if value.active %}checked{% endif %} {% if
+                                                                value.count==0 and value.active==false %}disabled{%
+                                                                endif %}>
+
+                                                            <span class="mobile-facets__highlight"></span>
+
+                                                            <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16"
+                                                                aria-hidden="true" focusable="false">
+                                                                <rect width="16" height="16" stroke="currentColor"
+                                                                    fill="none" stroke-width="1"></rect>
+                                                            </svg>
+
+                                                            <svg class="icon icon-checkmark" width="1.1rem"
+                                                                height="0.7rem" viewBox="0 0 11 7" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                                    stroke="currentColor" stroke-width="1.75"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                            In stock (5)
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="no-js-hidden mobile-facets__footer">
+                                                    <facet-remove class="mobile-facets__clear-wrapper">
+                                                        <a href="{{ results_url }}"
+                                                            class="mobile-facets__clear underlined-link">Clear</a>
+                                                    </facet-remove>
+                                                    <button type="button" class="no-js-hidden button button--primary"
+                                                        onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">Apply</button>
+                                                    <noscript><button
+                                                            class="button button--primary"></button></noscript>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}"
+                                            class="mobile-facets__details js-filter"
+                                            data-index="mobile-{{ forloop.index }}">
+                                            <summary class="mobile-facets__summary focus-inset">
+                                                <div>
+                                                    <span>Price</span>
+                                                    <span class="mobile-facets__arrow no-js-hidden">
+                                                        <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                            focusable="false" role="presentation"
+                                                            class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                                fill="currentColor">
+                                                        </svg>
+                                                    </span>
+                                                    <noscript></noscript>
+                                                </div>
+                                            </summary>
+                                            <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                                                class="mobile-facets__submenu">
+                                                <button class="mobile-facets__close-button link link--text focus-inset"
+                                                    aria-expanded="true" type="button">
+                                                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                        focusable="false" role="presentation" class="icon icon-arrow"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                            fill="currentColor">
+                                                    </svg>
+                                                    Price
+                                                </button>
+
+                                                <p class="mobile-facets__info">The highest price is $595.00</p>
+
+                                                <price-range class="facets__price">
+                                                    <span class="field-currency">₫</span>
+                                                    <div class="field">
+                                                        <input class="field__input" name="filter.v.price.gte"
+                                                            id="Filter-Price-GTE" type="number" placeholder="" min="0"
+                                                            max="200000">
+                                                        <label class="field__label" for="Filter-Price-GTE">From</label>
+                                                    </div>
+                                                    <span class="field-currency">₫</span>
+                                                    <div class="field">
+                                                        <input class="field__input" name="filter.v.price.lte"
+                                                            id="Filter-Price-LTE" type="number" min="0" placeholder=""
+                                                            max="200000">
+                                                        <label class="field__label" for="Filter-Price-LTE">To</label>
+                                                    </div>
+                                                </price-range>
+                                                <div class="no-js-hidden mobile-facets__footer">
+                                                    <facet-remove class="mobile-facets__clear-wrapper">
+                                                        <a href="{{ results_url }}"
+                                                            class="mobile-facets__clear underlined-link">Clear</a>
+                                                    </facet-remove>
+                                                    <button type="button" class="no-js-hidden button button--primary"
+                                                        onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">Apply</button>
+                                                    <noscript><button
+                                                            class="button button--primary"></button></noscript>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}"
+                                        class="mobile-facets__details js-filter"
+                                        data-index="mobile-{{ forloop.index }}">
+                                        <summary class="mobile-facets__summary focus-inset">
+                                            <div>
+                                                <span>Color</span>
+                                                <span class="mobile-facets__arrow no-js-hidden">
+                                                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                        focusable="false" role="presentation"
+                                                        class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                            fill="currentColor">
+                                                    </svg>
+                                                </span>
+                                                <noscript>
+
+                                                </noscript>
+                                            </div>
+                                        </summary>
+                                        <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                                            class="mobile-facets__submenu">
+                                            <button class="mobile-facets__close-button link link--text focus-inset"
+                                                aria-expanded="true" type="button">
+                                                <svg viewBox="0 0 14 10" fill="none" aria-hidden="true"
+                                                    focusable="false" role="presentation" class="icon icon-arrow"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z"
+                                                        fill="currentColor">
+                                                </svg>
+                                                Color
+                                            </button>
+                                            <ul class="mobile-facets__list list-unstyled" role="list">
+                                                <li class="mobile-facets__item list-menu__item">
+                                                    <label
+                                                        for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                        class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
+                                                        <input class="mobile-facets__checkbox" type="checkbox"
+                                                            name="{{ value.param_name }}" value="{{ value.value }}"
+                                                            id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                            {% if value.active %}checked{% endif %} {% if
+                                                            value.count==0 and value.active==false %}disabled{%
+                                                            endif %}>
+
+                                                        <span class="mobile-facets__highlight"></span>
+
+                                                        <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16"
+                                                            aria-hidden="true" focusable="false">
+                                                            <rect width="16" height="16" stroke="currentColor"
+                                                                fill="none" stroke-width="1"></rect>
+                                                        </svg>
+
+                                                        <svg class="icon icon-checkmark" width="1.1rem"
+                                                            height="0.7rem" viewBox="0 0 11 7" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                                stroke="currentColor" stroke-width="1.75"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        Black (5)
+                                                    </label>
+                                                </li>
+                                                <li class="mobile-facets__item list-menu__item">
+                                                    <label
+                                                        for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                        class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
+                                                        <input class="mobile-facets__checkbox" type="checkbox"
+                                                            name="{{ value.param_name }}" value="{{ value.value }}"
+                                                            id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                            {% if value.active %}checked{% endif %} {% if
+                                                            value.count==0 and value.active==false %}disabled{%
+                                                            endif %}>
+
+                                                        <span class="mobile-facets__highlight"></span>
+
+                                                        <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16"
+                                                            aria-hidden="true" focusable="false">
+                                                            <rect width="16" height="16" stroke="currentColor"
+                                                                fill="none" stroke-width="1"></rect>
+                                                        </svg>
+
+                                                        <svg class="icon icon-checkmark" width="1.1rem"
+                                                            height="0.7rem" viewBox="0 0 11 7" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                                stroke="currentColor" stroke-width="1.75"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        Blue (5)
+                                                    </label>
+                                                </li>
+                                                <li class="mobile-facets__item list-menu__item">
+                                                    <label
+                                                        for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                        class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}">
+                                                        <input class="mobile-facets__checkbox" type="checkbox"
+                                                            name="{{ value.param_name }}" value="{{ value.value }}"
+                                                            id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
+                                                            {% if value.active %}checked{% endif %} {% if
+                                                            value.count==0 and value.active==false %}disabled{%
+                                                            endif %}>
+
+                                                        <span class="mobile-facets__highlight"></span>
+
+                                                        <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16"
+                                                            aria-hidden="true" focusable="false">
+                                                            <rect width="16" height="16" stroke="currentColor"
+                                                                fill="none" stroke-width="1"></rect>
+                                                        </svg>
+
+                                                        <svg class="icon icon-checkmark" width="1.1rem"
+                                                            height="0.7rem" viewBox="0 0 11 7" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                                                stroke="currentColor" stroke-width="1.75"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        White (5)
+                                                    </label>
+                                                </li>
+                                            </ul>
+
+                                            <div class="no-js-hidden mobile-facets__footer">
+                                                <facet-remove class="mobile-facets__clear-wrapper">
+                                                    <a href="{{ results_url }}"
+                                                        class="mobile-facets__clear underlined-link">Clear</a>
+                                                </facet-remove>
+                                                <button type="button" class="no-js-hidden button button--primary"
+                                                    onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">Apply</button>
+                                                <noscript><button
+                                                        class="button button--primary"></button></noscript>
+                                            </div>
+                                        </div>
+                                    </details>
+
+                                        <div class="mobile-facets__details js-filter"
+                                            data-index="mobile-{{ forloop.index }}">
+                                            <div class="mobile-facets__summary">
+                                                <div class="mobile-facets__sort">
+                                                    <label for="SortBy-mobile">Sort by:</label>
+                                                    <div class="select">
+                                                        <select name="sort_by" class="select__select" id="SortBy-mobile"
+                                                            aria-describedby="a11y-refresh-page-message">
+                                                            <option value="">Featured</option>
+                                                            <option value="">Best selling</option>
+                                                            <option value="">Price, hight to low</option>
+                                                        </select>
+                                                        <svg aria-hidden="true" focusable="false" role="presentation"
+                                                            class="icon icon-caret" viewBox="0 0 10 6">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                                                                fill="currentColor">
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mobile-facets__footer">
+                                            <facet-remove class="mobile-facets__clear-wrapper">
+                                                <a href="{{ results_url }}"
+                                                    class="mobile-facets__clear underlined-link">Clear all</a>
+                                            </facet-remove>
+                                            <button type="button" class="no-js-hidden button button--primary"
+                                                onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">Apply</button>
+                                            <noscript><button class="button button--primary"></button></noscript>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" name="q"
+                                        value="{{ results.current_vendor }}{{ results.current_type }}">
+
+                                    <input type="hidden" name="q" value="{{ results.terms | escape }}">
+                                    <input name="options[prefix]" type="hidden" value="last">
+                                </div>
+                            </form>
+                        </facet-filters-form>
+                    </details>
+                </menu-drawer>
                 <div class="collection_product_grid">
                     <div class="collection util_pc">
                         <div class="collection_banner">
@@ -296,7 +680,7 @@
                         <div class="collection_product_list">
                             <div class="inner">
                                 <div class="loading_overlay gradient"></div>
-                                <div class="list_item" >
+                                <div class="list_item">
                                     <ul id="list_collection" class="items">
 
                                     </ul>
@@ -306,6 +690,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- footer -->
@@ -411,6 +796,68 @@
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/collection.js"></script>
     <script src="https://kit.fontawesome.com/c1710a471e.js" crossorigin="anonymous"></script>
+    <script>
+        class DetailsModal extends HTMLElement {
+  constructor() {
+    super();
+    this.detailsContainer = this.querySelector('details');
+    this.summaryToggle = this.querySelector('summary');
+
+    this.detailsContainer.addEventListener(
+      'keyup',
+      (event) => event.code.toUpperCase() === 'ESCAPE' && this.close()
+    );
+    this.summaryToggle.addEventListener(
+      'click',
+      this.onSummaryClick.bind(this)
+    );
+    this.querySelector('button[type="button"]').addEventListener(
+      'click',
+      this.close.bind(this)
+    );
+
+    this.summaryToggle.setAttribute('role', 'button');
+  }
+
+  isOpen() {
+    return this.detailsContainer.hasAttribute('open');
+  }
+
+  onSummaryClick(event) {
+    event.preventDefault();
+    event.target.closest('details').hasAttribute('open')
+      ? this.close()
+      : this.open(event);
+  }
+
+  onBodyClick(event) {
+    if (!this.contains(event.target) || event.target.classList.contains('modal-overlay')) this.close(false);
+  }
+
+  open(event) {
+    this.onBodyClickEvent =
+      this.onBodyClickEvent || this.onBodyClick.bind(this);
+    event.target.closest('details').setAttribute('open', true);
+    document.body.addEventListener('click', this.onBodyClickEvent);
+    document.body.classList.add('overflow-hidden');
+
+    trapFocus(
+      this.detailsContainer.querySelector('[tabindex="-1"]'),
+      this.detailsContainer.querySelector('input:not([type="hidden"])')
+    );
+  }
+
+  close(focusToggle = true) {
+    removeTrapFocus(focusToggle ? this.summaryToggle : null);
+    this.detailsContainer.removeAttribute('open');
+    document.body.removeEventListener('click', this.onBodyClickEvent);
+    document.body.classList.remove('overflow-hidden');
+  }
+}
+
+customElements.define('details-modal', DetailsModal);
+
+    </script>
 </body>
 
 </html>

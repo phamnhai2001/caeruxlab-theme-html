@@ -7,5 +7,5 @@
     // open nav menu
     document.getElementById("nav_toggle").onclick = function () { openFunction() };
     function openFunction() {
-        document.getElementById("menuToggle").classList.toggle("open");
+        document.querySelector("nav").classList.toggle("open");
     }

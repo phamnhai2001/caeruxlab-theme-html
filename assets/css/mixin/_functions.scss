@@ -72,7 +72,11 @@
 /* automatic size vw */
 
 $viewport: 768;
-@function pxtovw($num, $width: $viewport) {
+@function get_pc($fsize, $viewport:1000) {
+    $rate: 100 / $viewport;
+    @return $rate * $fsize * 1vw;
+}
+@function get_sp($num, $width: $viewport) {
     @return (1vw * $num / $width * 100);
 }
 
